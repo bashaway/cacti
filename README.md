@@ -53,17 +53,22 @@ Password : admin<BR>
 ![Screenshot from Gyazo](https://gyazo.com/a5228098cfe01716e03853f7ba7cf9fa/raw)
 
 change default password
+
 ![Screenshot from Gyazo](https://gyazo.com/3b2d06832bcbd97f09ead6af765b5b85/raw)
 
 ![Screenshot from Gyazo](https://gyazo.com/5647932d6e00c091e33019191d285d22/raw)
 
 environment check
+
 ![Screenshot from Gyazo](https://gyazo.com/811472f22d12284d4e29792f0f6e0c38/raw)
 
 select New Primary Server　
+
 ![Screenshot from Gyazo](https://gyazo.com/b1369c2711a48531baa8b916a438a181/raw)
 
 ![Screenshot from Gyazo](https://gyazo.com/2ac81a30cc16dcbc51e40b49bc8daccb/raw)
+
+setup complete
 
 ![Screenshot from Gyazo](https://gyazo.com/d568ad96412a1007ad41dc19f4162858/raw)
 
@@ -71,8 +76,9 @@ select New Primary Server　
 ## spine configuration
 
 
-Console --> Configuration --> Settings --> Poller TAB
+Console --> Configuration --> Settings --> Poller<BR> 
 PollerType : cmd.php --> spine
+
 ![image.png](https://qiita-image-store.s3.amazonaws.com/0/334782/19e128a7-7260-9ff5-9bcd-ebb75c526e50.png)
 
 
