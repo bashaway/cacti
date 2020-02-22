@@ -47,8 +47,9 @@ docker-compose up -d
 http://[hostname or address]/cacti
 
 ## login web console
-Username : admin
-Password : admin
+Username : admin<BR>
+Password : admin<BR>
+
 ![Screenshot from Gyazo](https://gyazo.com/a5228098cfe01716e03853f7ba7cf9fa/raw)
 
 change default password
