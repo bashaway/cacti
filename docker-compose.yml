@@ -25,6 +25,7 @@ services:
       cacti_nw:
     ports:
       - 80:80
+      - 443:443
     links:
       - cacti_db
     cap_add:
