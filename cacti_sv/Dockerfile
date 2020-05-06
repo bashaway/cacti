@@ -11,7 +11,7 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime ; \
     dnf -y install cacti-spine php mod_ssl ;\
     echo 'HTTPD_LANG=ja_JP.UTF-8' >> /etc/sysconfig/httpd ;\
     sed -i 's/^[^#]..*Require\ host\ localhost/Require all granted/' /etc/httpd/conf.d/cacti.conf ;\
-    sed -i 's/^#//' /etc/cron.d/cacti ; \
+    # sed -i 's/^#//' /etc/cron.d/cacti ; \
     sed -i 's/database_hostname\ =..*/database_hostname\ =\ '\''cacti_db'\'';/g' /usr/share/cacti/include/config.php ;\
     sed -i 's/database_username\ =..*/database_username\ =\ '\''cactiuser'\'';/g' /usr/share/cacti/include/config.php ;\
     sed -i 's/database_password\ =..*/database_password\ =\ '\''cactipwd'\'';/g' /usr/share/cacti/include/config.php ;\

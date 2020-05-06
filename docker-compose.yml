@@ -34,7 +34,7 @@ services:
       - seccomp:unconfined
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
-      - ./rra:/var/lib/cacti/rra
+      - ./rra:/var/lib/cacti/rra:ro
     environment:
       TZ: 'Asia/Tokyo'
     depends_on:
