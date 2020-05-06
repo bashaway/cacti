@@ -23,6 +23,8 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime ; \
     sed -i 's/DB_Pass..*/DB_Pass\ cactipwd/g' /etc/spine.conf ;\
     systemctl enable httpd 
 COPY docker-entrypoint.sh /usr/local/bin/
+COPY cacti_def.sql /
+COPY ss_netsnmp_memory.php /var/lib/cacti/scripts/
 RUN ln -s usr/local/bin/docker-entrypoint.sh / 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD [ "/usr/sbin/init" ]
