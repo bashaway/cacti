@@ -1,0 +1,2 @@
+2 5 * * *       root    cp -f /usr/share/cacti/rra/CACTI_DB_BACKUP.sql /usr/share/cacti/rra/CACTI_DB_BACKUP.sql.old
+5 5 * * *       root    mysqldump -u cactiuser -pcactipwd cacti -h cacti_db > /usr/share/cacti/rra/CACTI_DB_BACKUP.sql 2>&1
