@@ -120,12 +120,16 @@ RRA directory mount on host machine.
 
 ## Cacti database
 Cacti database automates daily backups with CRON.
+
+`crontab`
 ```crontab
 2 5 * * *       root    cp -f /usr/share/cacti/rra/CACTI_DB_BACKUP.sql /usr/share/cacti/rra/CACTI_DB_BACKUP.sql.old
 5 5 * * *       root    mysqldump -u cactiuser -pcactipwd cacti -h cacti_db > /usr/share/cacti/rra/CACTI_DB_BACKUP.sql 2>&1
 ```
 
 ## Restore cacti server
+
+`cacti_sv/docker-entrypoint.sh`
 ```sh:cacti_sv/docker-entrypoint.sh
 if [ "`mysql -ucactiuser -pcactipwd  -h cacti_db cacti  -e 'show tables'`" = "" ]  ; then
   mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -uroot -prootpwd mysql -h cacti_db
@@ -149,7 +153,7 @@ fi
 
 ### DockerCE
 
-```
+```sh
 dnf -y update
 dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 dnf -y --nobest install docker-ce docker-ce-cli containerd.io
@@ -160,7 +164,7 @@ systemctl start docker
 ```
 
 ### Docker Compose
-```
+```sh
 curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
