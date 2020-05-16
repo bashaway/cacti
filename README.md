@@ -19,7 +19,7 @@ Container
 
 # Firewall Policy add
 
-```
+```shell
 firewall-cmd --add-masquerade --permanent
 firewall-cmd --reload
 ```
@@ -29,12 +29,12 @@ firewall-cmd --reload
 
 ## git clone
 
-```
+```shell
 git clone https://github.com/bashaway/cacti
 ```
 
 ## Build and Start Containers
-```
+```shell
 cd cacti
 docker-compose build
 docker-compose up -d
@@ -84,7 +84,7 @@ PollerType : cmd.php --> spine
 
 check spine process
 
-```
+```shell
 # spine -V=3 -R
 SPINE: Using spine config file [/etc/spine.conf]
 SPINE: Version 1.1.38 starting
@@ -130,7 +130,7 @@ Cacti database automates daily backups with CRON.
 ## Restore cacti server
 
 `cacti_sv/docker-entrypoint.sh`
-```sh:cacti_sv/docker-entrypoint.sh
+```shell:cacti_sv/docker-entrypoint.sh
 if [ "`mysql -ucactiuser -pcactipwd  -h cacti_db cacti  -e 'show tables'`" = "" ]  ; then
   mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -uroot -prootpwd mysql -h cacti_db
 
