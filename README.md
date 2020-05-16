@@ -104,6 +104,41 @@ SPINE: Version 1.1.38 starting
 #
 ```
 
+# Database backup and restore
+
+## RRA file
+RRA directory mount on host machine.
+```Dockerfile:cacti_sv/Dockerfile
+----8<---(snip)---8<---
+ cacti_sv:
+    volumes:
+      - ./rra:/var/lib/cacti/rra
+---->8---(snip)--->8---
+```
+
+## Cacti database
+Cacti database automates daily backups with CRON.
+```crontab
+2 5 * * *       root    cp -f /usr/share/cacti/rra/CACTI_DB_BACKUP.sql /usr/share/cacti/rra/CACTI_DB_BACKUP.sql.old
+5 5 * * *       root    mysqldump -u cactiuser -pcactipwd cacti -h cacti_db > /usr/share/cacti/rra/CACTI_DB_BACKUP.sql 2>&1
+```
+
+## Restore cacti server
+```sh:cacti_sv/docker-entrypoint.sh
+if [ "`mysql -ucactiuser -pcactipwd  -h cacti_db cacti  -e 'show tables'`" = "" ]  ; then
+  mysql_tzinfo_to_sql /usr/share/zoneinfo | mysql -uroot -prootpwd mysql -h cacti_db
+
+  if [ "/usr/share/cacti/rra/CACTI_DB_BACKUP.sql" ]  ; then
+    mysql -ucactiuser -pcactipwd cacti -h cacti_db < /usr/share/cacti/rra/CACTI_DB_BACKUP.sql
+  else
+    mysql -ucactiuser -pcactipwd cacti -h cacti_db < /usr/share/doc/cacti/cacti.sql
+  fi
+
+  chown -R apache.apache /var/lib/cacti/rra
+fi
+```
+
+
 
 
 # Appendix
