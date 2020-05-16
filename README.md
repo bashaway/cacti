@@ -153,7 +153,7 @@ fi
 
 ### DockerCE
 
-```sh
+```shell
 dnf -y update
 dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
 dnf -y --nobest install docker-ce docker-ce-cli containerd.io
@@ -164,7 +164,7 @@ systemctl start docker
 ```
 
 ### Docker Compose
-```sh
+```shell
 curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
 chmod +x /usr/local/bin/docker-compose
 ```
