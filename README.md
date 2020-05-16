@@ -6,16 +6,16 @@ Network
 
 |key|value|
 |:-:|:-:|
-|name|cacti_cacti_nw|
+|name|cacti_nw|
 |subnet|-(dynamic)|
-|interface|br_cacti_nw|
+|interface|cacti_nw|
 
 Container
 
 |server|app|address|listen|
 |:-:|:-:|:-:|:-:|
 |cacti_db|MariaDB|-(dynamic)|3306/tcp|
-|cacti_sv|cacti|-(dynamic)|80/tcp<BR>161,162/udp|
+|cacti_sv|apache<BR>cacti<BR>cacti-spine|-(dynamic)|80/tcp<BR>443/tcp|
 
 # Firewall Policy add
 

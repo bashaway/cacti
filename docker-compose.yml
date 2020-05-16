@@ -12,7 +12,7 @@ services:
       MARIADB_ROOT_PASSWORD: rootpwd
       TZ: 'Asia/Tokyo'
     networks:
-      cacti_nw:
+      nw:
     ports:
       - "3306:3306"
 
@@ -22,7 +22,7 @@ services:
     hostname: cactia_sv
     restart: always
     networks:
-      cacti_nw:
+      nw:
     ports:
       - 80:80
       - 443:443
@@ -41,9 +41,9 @@ services:
       - cacti_db
 
 networks:
-  cacti_nw:
+  nw:
     driver: bridge
     driver_opts:
       com.docker.network.bridge.enable_ip_masquerade: "true"
       com.docker.network.bridge.host_binding_ipv4: "0.0.0.0"
-      com.docker.network.bridge.name: "br_cacti_nw"
+      com.docker.network.bridge.name: "cacti_nw"
