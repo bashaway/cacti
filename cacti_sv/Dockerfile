@@ -126,13 +126,13 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime ; \
     # 
     mkdir /usr/share/cacti/plugins/rrdcalendar ;\
     git clone https://github.com/bashaway/rrdcalendar /usr/share/cacti/plugins/rrdcalendar ;\
-    #chown apache.apache /usr/share/cacti/plugins/rrdcalendar/cache ;\
-    #dnf -y install ImageMagick ;\
+    chown apache.apache /usr/share/cacti/plugins/rrdcalendar/cache ;\
+    dnf -y install ImageMagick ;\
     # 
     # haruca : Half Ability Router Utility and Config Archiver
     # 
-    mkdir /usr/share/cacti/plugins/haruca ;\
-    git clone https://github.com/bashaway/haruca /usr/share/cacti/plugins/haruca ;\
+    #mkdir /usr/share/cacti/plugins/haruca ;\
+    #git clone https://github.com/bashaway/haruca /usr/share/cacti/plugins/haruca ;\
     #chown apache.apache /usr/share/cacti/plugins/haruca/bin/conffile ;\
     #dnf -y install gcc zip perl-CPAN perl-DBI perl-DBD-MySQL ;\
     #cpan -i Net::SSH::Expect Net::Telnet ;\
