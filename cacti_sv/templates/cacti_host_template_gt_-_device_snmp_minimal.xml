@@ -1,9 +1,311 @@
 <cacti>	
-	<hash_0201024b0adb6a094cb32e0ae8ed533f4d69ba>
-		<name>DevT - Linux Server</name>
-		<graph_templates>hash_0001023295e1523e05db86487c11d359218bbe|hash_000102417710a0cad0af62c9cfc43e724b46bd</graph_templates>
-		<data_queries>hash_040102c9425bca7d4b84c3a4e5565576984ea2|hash_0401029343eab1f4d88b0e61ffc9d020f35414|hash_0401020d1ab53fe37487a5d0b9e1d3ee8c1d0d</data_queries>
-	</hash_0201024b0adb6a094cb32e0ae8ed533f4d69ba>
+	<hash_020102710229c076c5923d56c4954ddb1bb60a>
+		<name>GT - Device SNMP minimal</name>
+		<graph_templates>hash_000102cd8d52f25b080c482485b61b236a433f|hash_000102ab37cbed8610deeffbb20dc1fe57b330|hash_0001023295e1523e05db86487c11d359218bbe</graph_templates>
+		<data_queries>hash_040102c9425bca7d4b84c3a4e5565576984ea2</data_queries>
+	</hash_020102710229c076c5923d56c4954ddb1bb60a>
+	<hash_000102cd8d52f25b080c482485b61b236a433f>
+		<name>Device - Polling Time</name>
+		<graph>
+			<t_title></t_title>
+			<title>|host_description| - Polling Time</title>
+			<t_vertical_label></t_vertical_label>
+			<vertical_label>seconds</vertical_label>
+			<t_image_format_id></t_image_format_id>
+			<image_format_id>1</image_format_id>
+			<t_height></t_height>
+			<height>200</height>
+			<t_width></t_width>
+			<width>700</width>
+			<t_base_value></t_base_value>
+			<base_value>1000</base_value>
+			<t_slope_mode></t_slope_mode>
+			<slope_mode>on</slope_mode>
+			<t_auto_scale></t_auto_scale>
+			<auto_scale>on</auto_scale>
+			<t_auto_scale_opts></t_auto_scale_opts>
+			<auto_scale_opts>2</auto_scale_opts>
+			<t_auto_scale_log></t_auto_scale_log>
+			<auto_scale_log></auto_scale_log>
+			<t_scale_log_units></t_scale_log_units>
+			<scale_log_units></scale_log_units>
+			<t_auto_scale_rigid></t_auto_scale_rigid>
+			<auto_scale_rigid></auto_scale_rigid>
+			<t_upper_limit></t_upper_limit>
+			<upper_limit>100</upper_limit>
+			<t_lower_limit></t_lower_limit>
+			<lower_limit>0</lower_limit>
+			<t_unit_value></t_unit_value>
+			<unit_value></unit_value>
+			<t_unit_exponent_value></t_unit_exponent_value>
+			<unit_exponent_value></unit_exponent_value>
+			<t_unit_length></t_unit_length>
+			<unit_length></unit_length>
+			<t_no_gridfit></t_no_gridfit>
+			<no_gridfit></no_gridfit>
+			<t_alt_y_grid></t_alt_y_grid>
+			<alt_y_grid></alt_y_grid>
+			<t_right_axis></t_right_axis>
+			<right_axis></right_axis>
+			<t_right_axis_label></t_right_axis_label>
+			<right_axis_label></right_axis_label>
+			<t_right_axis_format></t_right_axis_format>
+			<right_axis_format>0</right_axis_format>
+			<t_right_axis_formatter></t_right_axis_formatter>
+			<right_axis_formatter>0</right_axis_formatter>
+			<t_left_axis_formatter></t_left_axis_formatter>
+			<left_axis_formatter>0</left_axis_formatter>
+			<t_auto_padding></t_auto_padding>
+			<auto_padding>on</auto_padding>
+			<t_dynamic_labels></t_dynamic_labels>
+			<dynamic_labels></dynamic_labels>
+			<t_force_rules_legend></t_force_rules_legend>
+			<force_rules_legend></force_rules_legend>
+			<t_tab_width></t_tab_width>
+			<tab_width></tab_width>
+			<t_legend_position></t_legend_position>
+			<legend_position>0</legend_position>
+			<t_legend_direction></t_legend_direction>
+			<legend_direction>0</legend_direction>
+		</graph>
+		<items>
+			<hash_10010255f63b2553858e79aa716715955dba88>
+				<graph_type_id>7</graph_type_id>
+				<task_item_id>hash_080102d87746b98b16ec2380f2dfa878a11a87</task_item_id>
+				<color_id>800517</color_id>
+				<alpha>FF</alpha>
+				<consolidation_function_id>1</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<vdef_id>0</vdef_id>
+				<shift></shift>
+				<value></value>
+				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<textalign></textalign>
+				<text_format>Time:</text_format>
+				<hard_return></hard_return>
+				<line_width>1.00</line_width>
+				<dashes></dashes>
+				<dash_offset>0</dash_offset>
+				<sequence>1</sequence>
+			</hash_10010255f63b2553858e79aa716715955dba88>
+			<hash_100102bade2e0fd8ce4c2a2a12714738ac3248>
+				<graph_type_id>9</graph_type_id>
+				<task_item_id>hash_080102d87746b98b16ec2380f2dfa878a11a87</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<consolidation_function_id>4</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<vdef_id>0</vdef_id>
+				<shift></shift>
+				<value></value>
+				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<textalign></textalign>
+				<text_format>Cur:</text_format>
+				<hard_return></hard_return>
+				<line_width>1.00</line_width>
+				<dashes></dashes>
+				<dash_offset>0</dash_offset>
+				<sequence>2</sequence>
+			</hash_100102bade2e0fd8ce4c2a2a12714738ac3248>
+			<hash_1001023ea9e524e4f105a35cab3f9875a32921>
+				<graph_type_id>9</graph_type_id>
+				<task_item_id>hash_080102d87746b98b16ec2380f2dfa878a11a87</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<consolidation_function_id>1</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<vdef_id>0</vdef_id>
+				<shift></shift>
+				<value></value>
+				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<textalign></textalign>
+				<text_format>Avg:</text_format>
+				<hard_return></hard_return>
+				<line_width>1.00</line_width>
+				<dashes></dashes>
+				<dash_offset>0</dash_offset>
+				<sequence>3</sequence>
+			</hash_1001023ea9e524e4f105a35cab3f9875a32921>
+			<hash_100102e3b50899210cefa545a5aedfe912b320>
+				<graph_type_id>9</graph_type_id>
+				<task_item_id>hash_080102d87746b98b16ec2380f2dfa878a11a87</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<consolidation_function_id>3</consolidation_function_id>
+				<cdef_id>0</cdef_id>
+				<vdef_id>0</vdef_id>
+				<shift></shift>
+				<value></value>
+				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<textalign></textalign>
+				<text_format>Max:</text_format>
+				<hard_return>on</hard_return>
+				<line_width>1.00</line_width>
+				<dashes></dashes>
+				<dash_offset>0</dash_offset>
+				<sequence>4</sequence>
+			</hash_100102e3b50899210cefa545a5aedfe912b320>
+		</items>
+		<inputs>
+			<hash_090102b12d40fbd3144b503e3b3a877a14e126>
+				<name>Data Source [polling_time]</name>
+				<description></description>
+				<column_name>task_item_id</column_name>
+				<items>hash_00010255f63b2553858e79aa716715955dba88|hash_000102bade2e0fd8ce4c2a2a12714738ac3248|hash_0001023ea9e524e4f105a35cab3f9875a32921|hash_000102e3b50899210cefa545a5aedfe912b320</items>
+			</hash_090102b12d40fbd3144b503e3b3a877a14e126>
+		</inputs>
+	</hash_000102cd8d52f25b080c482485b61b236a433f>
+	<hash_000102ab37cbed8610deeffbb20dc1fe57b330>
+		<name>Device - Uptime</name>
+		<graph>
+			<t_title></t_title>
+			<title>|host_description| - Uptime</title>
+			<t_vertical_label></t_vertical_label>
+			<vertical_label>days</vertical_label>
+			<t_image_format_id></t_image_format_id>
+			<image_format_id>1</image_format_id>
+			<t_height></t_height>
+			<height>200</height>
+			<t_width></t_width>
+			<width>700</width>
+			<t_base_value></t_base_value>
+			<base_value>1000</base_value>
+			<t_slope_mode></t_slope_mode>
+			<slope_mode>on</slope_mode>
+			<t_auto_scale></t_auto_scale>
+			<auto_scale>on</auto_scale>
+			<t_auto_scale_opts></t_auto_scale_opts>
+			<auto_scale_opts>2</auto_scale_opts>
+			<t_auto_scale_log></t_auto_scale_log>
+			<auto_scale_log></auto_scale_log>
+			<t_scale_log_units></t_scale_log_units>
+			<scale_log_units></scale_log_units>
+			<t_auto_scale_rigid></t_auto_scale_rigid>
+			<auto_scale_rigid></auto_scale_rigid>
+			<t_upper_limit></t_upper_limit>
+			<upper_limit>100</upper_limit>
+			<t_lower_limit></t_lower_limit>
+			<lower_limit>0</lower_limit>
+			<t_unit_value></t_unit_value>
+			<unit_value></unit_value>
+			<t_unit_exponent_value></t_unit_exponent_value>
+			<unit_exponent_value></unit_exponent_value>
+			<t_unit_length></t_unit_length>
+			<unit_length></unit_length>
+			<t_no_gridfit></t_no_gridfit>
+			<no_gridfit></no_gridfit>
+			<t_alt_y_grid></t_alt_y_grid>
+			<alt_y_grid></alt_y_grid>
+			<t_right_axis></t_right_axis>
+			<right_axis></right_axis>
+			<t_right_axis_label></t_right_axis_label>
+			<right_axis_label></right_axis_label>
+			<t_right_axis_format></t_right_axis_format>
+			<right_axis_format>0</right_axis_format>
+			<t_right_axis_formatter></t_right_axis_formatter>
+			<right_axis_formatter>0</right_axis_formatter>
+			<t_left_axis_formatter></t_left_axis_formatter>
+			<left_axis_formatter>0</left_axis_formatter>
+			<t_auto_padding></t_auto_padding>
+			<auto_padding>on</auto_padding>
+			<t_dynamic_labels></t_dynamic_labels>
+			<dynamic_labels></dynamic_labels>
+			<t_force_rules_legend></t_force_rules_legend>
+			<force_rules_legend></force_rules_legend>
+			<t_tab_width></t_tab_width>
+			<tab_width></tab_width>
+			<t_legend_position></t_legend_position>
+			<legend_position>0</legend_position>
+			<t_legend_direction></t_legend_direction>
+			<legend_direction>0</legend_direction>
+		</graph>
+		<items>
+			<hash_1001020c16125e5f2c1a5a528a56fc2bfd639c>
+				<graph_type_id>7</graph_type_id>
+				<task_item_id>hash_0801021330cb9379c39216c4c26b5457a3b1bd</task_item_id>
+				<color_id>0020C2</color_id>
+				<alpha>FF</alpha>
+				<consolidation_function_id>1</consolidation_function_id>
+				<cdef_id>hash_050102e467c2a53cd92031c422b0703329b59a</cdef_id>
+				<vdef_id>0</vdef_id>
+				<shift></shift>
+				<value></value>
+				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<textalign></textalign>
+				<text_format>Uptime:</text_format>
+				<hard_return></hard_return>
+				<line_width>1.00</line_width>
+				<dashes></dashes>
+				<dash_offset>0</dash_offset>
+				<sequence>1</sequence>
+			</hash_1001020c16125e5f2c1a5a528a56fc2bfd639c>
+			<hash_1001024b79bda8d293a60ca458dcf433517d26>
+				<graph_type_id>9</graph_type_id>
+				<task_item_id>hash_0801021330cb9379c39216c4c26b5457a3b1bd</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<consolidation_function_id>4</consolidation_function_id>
+				<cdef_id>hash_050102e467c2a53cd92031c422b0703329b59a</cdef_id>
+				<vdef_id>0</vdef_id>
+				<shift></shift>
+				<value></value>
+				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<textalign></textalign>
+				<text_format>Cur:</text_format>
+				<hard_return></hard_return>
+				<line_width>1.00</line_width>
+				<dashes></dashes>
+				<dash_offset>0</dash_offset>
+				<sequence>2</sequence>
+			</hash_1001024b79bda8d293a60ca458dcf433517d26>
+			<hash_1001029a4303a20c1eef5009e87c58c8b95dd8>
+				<graph_type_id>9</graph_type_id>
+				<task_item_id>hash_0801021330cb9379c39216c4c26b5457a3b1bd</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<consolidation_function_id>1</consolidation_function_id>
+				<cdef_id>hash_050102e467c2a53cd92031c422b0703329b59a</cdef_id>
+				<vdef_id>0</vdef_id>
+				<shift></shift>
+				<value></value>
+				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<textalign></textalign>
+				<text_format>Avg:</text_format>
+				<hard_return></hard_return>
+				<line_width>1.00</line_width>
+				<dashes></dashes>
+				<dash_offset>0</dash_offset>
+				<sequence>3</sequence>
+			</hash_1001029a4303a20c1eef5009e87c58c8b95dd8>
+			<hash_100102e9559cbc8fbe84e648e0f39f35e3e8c5>
+				<graph_type_id>9</graph_type_id>
+				<task_item_id>hash_0801021330cb9379c39216c4c26b5457a3b1bd</task_item_id>
+				<color_id>0</color_id>
+				<alpha>FF</alpha>
+				<consolidation_function_id>3</consolidation_function_id>
+				<cdef_id>hash_050102e467c2a53cd92031c422b0703329b59a</cdef_id>
+				<vdef_id>0</vdef_id>
+				<shift></shift>
+				<value></value>
+				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
+				<textalign></textalign>
+				<text_format>Max:</text_format>
+				<hard_return>on</hard_return>
+				<line_width>1.00</line_width>
+				<dashes></dashes>
+				<dash_offset>0</dash_offset>
+				<sequence>4</sequence>
+			</hash_100102e9559cbc8fbe84e648e0f39f35e3e8c5>
+		</items>
+		<inputs>
+			<hash_0901024565c0c95673d49c176a7601f24587f7>
+				<name>Data Source [uptime]</name>
+				<description></description>
+				<column_name>task_item_id</column_name>
+				<items>hash_0001020c16125e5f2c1a5a528a56fc2bfd639c|hash_0001024b79bda8d293a60ca458dcf433517d26|hash_0001029a4303a20c1eef5009e87c58c8b95dd8|hash_000102e9559cbc8fbe84e648e0f39f35e3e8c5</items>
+			</hash_0901024565c0c95673d49c176a7601f24587f7>
+		</inputs>
+	</hash_000102ab37cbed8610deeffbb20dc1fe57b330>
 	<hash_0001023295e1523e05db86487c11d359218bbe>
 		<name>GT - Advanced Ping</name>
 		<graph>
@@ -1148,626 +1450,8 @@
 			</hash_090102dda8e90a526aa57d628c94a3cd4c673f>
 		</inputs>
 	</hash_0001023295e1523e05db86487c11d359218bbe>
-	<hash_000102417710a0cad0af62c9cfc43e724b46bd>
-		<name>GT - Linux Memory Usage</name>
-		<graph>
-			<t_title></t_title>
-			<title>|host_description| - Memory Usage</title>
-			<t_vertical_label></t_vertical_label>
-			<vertical_label>bytes</vertical_label>
-			<t_image_format_id></t_image_format_id>
-			<image_format_id>1</image_format_id>
-			<t_height></t_height>
-			<height>200</height>
-			<t_width></t_width>
-			<width>700</width>
-			<t_base_value></t_base_value>
-			<base_value>1024</base_value>
-			<t_slope_mode></t_slope_mode>
-			<slope_mode>on</slope_mode>
-			<t_auto_scale></t_auto_scale>
-			<auto_scale>on</auto_scale>
-			<t_auto_scale_opts></t_auto_scale_opts>
-			<auto_scale_opts>2</auto_scale_opts>
-			<t_auto_scale_log></t_auto_scale_log>
-			<auto_scale_log></auto_scale_log>
-			<t_scale_log_units></t_scale_log_units>
-			<scale_log_units></scale_log_units>
-			<t_auto_scale_rigid></t_auto_scale_rigid>
-			<auto_scale_rigid></auto_scale_rigid>
-			<t_upper_limit></t_upper_limit>
-			<upper_limit>0</upper_limit>
-			<t_lower_limit></t_lower_limit>
-			<lower_limit>0</lower_limit>
-			<t_unit_value></t_unit_value>
-			<unit_value></unit_value>
-			<t_unit_exponent_value></t_unit_exponent_value>
-			<unit_exponent_value></unit_exponent_value>
-			<t_unit_length></t_unit_length>
-			<unit_length></unit_length>
-			<t_no_gridfit></t_no_gridfit>
-			<no_gridfit></no_gridfit>
-			<t_alt_y_grid></t_alt_y_grid>
-			<alt_y_grid></alt_y_grid>
-			<t_right_axis></t_right_axis>
-			<right_axis></right_axis>
-			<t_right_axis_label></t_right_axis_label>
-			<right_axis_label></right_axis_label>
-			<t_right_axis_format></t_right_axis_format>
-			<right_axis_format>0</right_axis_format>
-			<t_right_axis_formatter></t_right_axis_formatter>
-			<right_axis_formatter>0</right_axis_formatter>
-			<t_left_axis_formatter></t_left_axis_formatter>
-			<left_axis_formatter>0</left_axis_formatter>
-			<t_auto_padding></t_auto_padding>
-			<auto_padding>on</auto_padding>
-			<t_dynamic_labels></t_dynamic_labels>
-			<dynamic_labels></dynamic_labels>
-			<t_force_rules_legend></t_force_rules_legend>
-			<force_rules_legend></force_rules_legend>
-			<t_tab_width></t_tab_width>
-			<tab_width>30</tab_width>
-			<t_legend_position></t_legend_position>
-			<legend_position>0</legend_position>
-			<t_legend_direction></t_legend_direction>
-			<legend_direction>0</legend_direction>
-		</graph>
-		<items>
-			<hash_100102e25035089e948e06c493cf4dd5aef242>
-				<graph_type_id>7</graph_type_id>
-				<task_item_id>hash_080102a05184f5255edf0d433cb818b788afce</task_item_id>
-				<color_id>862F2F</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Used Real</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>1</sequence>
-			</hash_100102e25035089e948e06c493cf4dd5aef242>
-			<hash_100102f84a571e578108bfdd1582f91b72a724>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102a05184f5255edf0d433cb818b788afce</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>4</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Current:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>2</sequence>
-			</hash_100102f84a571e578108bfdd1582f91b72a724>
-			<hash_100102c039eb603e3c9b64c0c2fc34dde6f4b5>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102a05184f5255edf0d433cb818b788afce</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Avg:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>3</sequence>
-			</hash_100102c039eb603e3c9b64c0c2fc34dde6f4b5>
-			<hash_1001022eae8cc0e3ae4990d5206b69e91d745d>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102a05184f5255edf0d433cb818b788afce</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>2</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Min:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>4</sequence>
-			</hash_1001022eae8cc0e3ae4990d5206b69e91d745d>
-			<hash_1001027269261f810da3e62b544abe237d8771>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102a05184f5255edf0d433cb818b788afce</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>3</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Max:</text_format>
-				<hard_return>on</hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>5</sequence>
-			</hash_1001027269261f810da3e62b544abe237d8771>
-			<hash_1001024e2e4ffd3e1d8db0d8b522a12c599c6c>
-				<graph_type_id>8</graph_type_id>
-				<task_item_id>hash_080102f16053962f2fd6b4ba15a6e20f9042f8</task_item_id>
-				<color_id>EA8F00</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Buffers</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>6</sequence>
-			</hash_1001024e2e4ffd3e1d8db0d8b522a12c599c6c>
-			<hash_100102f55a1bde7742f2f7b83cbff22eda0f0a>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102f16053962f2fd6b4ba15a6e20f9042f8</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>4</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Current:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>7</sequence>
-			</hash_100102f55a1bde7742f2f7b83cbff22eda0f0a>
-			<hash_100102e2a26becd72b542ae590e610d2b41357>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102f16053962f2fd6b4ba15a6e20f9042f8</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Avg:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>8</sequence>
-			</hash_100102e2a26becd72b542ae590e610d2b41357>
-			<hash_100102b248fa87ef7068ce4a59c27901d84c5c>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102f16053962f2fd6b4ba15a6e20f9042f8</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>2</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Min:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>9</sequence>
-			</hash_100102b248fa87ef7068ce4a59c27901d84c5c>
-			<hash_100102bf251c6162c7e6194e424c0a3f15cf63>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102f16053962f2fd6b4ba15a6e20f9042f8</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>3</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Max:</text_format>
-				<hard_return>on</hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>10</sequence>
-			</hash_100102bf251c6162c7e6194e424c0a3f15cf63>
-			<hash_100102d303ce39cae0668028212d3be79589a1>
-				<graph_type_id>8</graph_type_id>
-				<task_item_id>hash_0801026584c1db510c08785e6ec50dc7f8f34e</task_item_id>
-				<color_id>FFC73B</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Cache</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>11</sequence>
-			</hash_100102d303ce39cae0668028212d3be79589a1>
-			<hash_1001026a351d4ff32906fd85570f1376f4c8f1>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801026584c1db510c08785e6ec50dc7f8f34e</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>4</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Current:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>12</sequence>
-			</hash_1001026a351d4ff32906fd85570f1376f4c8f1>
-			<hash_100102e30bfeb739369b30df3a7784b3cf7648>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801026584c1db510c08785e6ec50dc7f8f34e</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Avg:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>13</sequence>
-			</hash_100102e30bfeb739369b30df3a7784b3cf7648>
-			<hash_1001026b36bcc15e7a748d0468a5fb6cac211d>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801026584c1db510c08785e6ec50dc7f8f34e</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>2</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Min:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>14</sequence>
-			</hash_1001026b36bcc15e7a748d0468a5fb6cac211d>
-			<hash_100102bccf517b6e033d2782c0977073f9d092>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801026584c1db510c08785e6ec50dc7f8f34e</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>3</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Max:</text_format>
-				<hard_return>on</hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>15</sequence>
-			</hash_100102bccf517b6e033d2782c0977073f9d092>
-			<hash_1001029a44cb92ae745e4c6f021689bacb75e7>
-				<graph_type_id>8</graph_type_id>
-				<task_item_id>hash_0801023733b38d9d8f13e3fb56d1d8a2fc926c</task_item_id>
-				<color_id>74C366</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Unused Real</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>16</sequence>
-			</hash_1001029a44cb92ae745e4c6f021689bacb75e7>
-			<hash_100102616bd6c7ec24a2e8d135f7fc901ad0e6>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801023733b38d9d8f13e3fb56d1d8a2fc926c</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>4</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Current:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>17</sequence>
-			</hash_100102616bd6c7ec24a2e8d135f7fc901ad0e6>
-			<hash_100102a31bab249f909ff5b53e6e51dcfbf64e>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801023733b38d9d8f13e3fb56d1d8a2fc926c</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Avg:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>18</sequence>
-			</hash_100102a31bab249f909ff5b53e6e51dcfbf64e>
-			<hash_1001024f34c80eea4feaf5ba3a1be51b0e9610>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801023733b38d9d8f13e3fb56d1d8a2fc926c</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>2</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Min:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>19</sequence>
-			</hash_1001024f34c80eea4feaf5ba3a1be51b0e9610>
-			<hash_1001023e10cea5121314627c66065fc31c7f26>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801023733b38d9d8f13e3fb56d1d8a2fc926c</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>3</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Max:</text_format>
-				<hard_return>on</hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>20</sequence>
-			</hash_1001023e10cea5121314627c66065fc31c7f26>
-			<hash_100102162a54ee8030fb1db9ceac3ea3ea6186>
-				<graph_type_id>8</graph_type_id>
-				<task_item_id>hash_0801028c61f584d287664da6f4a1a3ac299930</task_item_id>
-				<color_id>FFC3C0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Used Swap</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>21</sequence>
-			</hash_100102162a54ee8030fb1db9ceac3ea3ea6186>
-			<hash_1001027486d99b05836b1c8af880c870ed24c2>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801028c61f584d287664da6f4a1a3ac299930</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>4</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Current:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>22</sequence>
-			</hash_1001027486d99b05836b1c8af880c870ed24c2>
-			<hash_10010223d8a919ff2cc35c591e2b74b9b70398>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801028c61f584d287664da6f4a1a3ac299930</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Avg:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>23</sequence>
-			</hash_10010223d8a919ff2cc35c591e2b74b9b70398>
-			<hash_10010236b0b9f6acdcba944f370eedea9e070f>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801028c61f584d287664da6f4a1a3ac299930</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>2</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Min:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>24</sequence>
-			</hash_10010236b0b9f6acdcba944f370eedea9e070f>
-			<hash_100102d7a3bf67f6e3b7b1a7f724ad6c4e64ee>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801028c61f584d287664da6f4a1a3ac299930</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>3</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Max:</text_format>
-				<hard_return>on</hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>25</sequence>
-			</hash_100102d7a3bf67f6e3b7b1a7f724ad6c4e64ee>
-			<hash_10010201b0aef3652b53e7b63d81061aa92cc3>
-				<graph_type_id>4</graph_type_id>
-				<task_item_id>hash_080102ca3b962da8cf74165184937db6d368dc</task_item_id>
-				<color_id>000000</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Total Real</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>26</sequence>
-			</hash_10010201b0aef3652b53e7b63d81061aa92cc3>
-			<hash_10010227b9f7a2eaed7ec59a39ad3aeb3e3f61>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102ca3b962da8cf74165184937db6d368dc</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>4</consolidation_function_id>
-				<cdef_id>hash_050102634a23af5e78af0964e8d33b1a4ed26b</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Current:</text_format>
-				<hard_return>on</hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>27</sequence>
-			</hash_10010227b9f7a2eaed7ec59a39ad3aeb3e3f61>
-		</items>
-		<inputs>
-			<hash_090102e2a00ee69ed568f4e27de93ed85c0dfc>
-				<name>Data Source [totalReal]</name>
-				<description></description>
-				<column_name>task_item_id</column_name>
-				<items>hash_00010201b0aef3652b53e7b63d81061aa92cc3|hash_00010227b9f7a2eaed7ec59a39ad3aeb3e3f61</items>
-			</hash_090102e2a00ee69ed568f4e27de93ed85c0dfc>
-			<hash_0901027992c7196dfe319d97cdfbd2e578aae9>
-				<name>Data Source [usedMem]</name>
-				<description></description>
-				<column_name>task_item_id</column_name>
-				<items>hash_000102e25035089e948e06c493cf4dd5aef242|hash_000102f84a571e578108bfdd1582f91b72a724|hash_000102c039eb603e3c9b64c0c2fc34dde6f4b5|hash_0001022eae8cc0e3ae4990d5206b69e91d745d|hash_0001027269261f810da3e62b544abe237d8771</items>
-			</hash_0901027992c7196dfe319d97cdfbd2e578aae9>
-			<hash_090102a3f20c4c1bcb24f67df2cad22a365fca>
-				<name>Data Source [memCached]</name>
-				<description></description>
-				<column_name>task_item_id</column_name>
-				<items>hash_000102d303ce39cae0668028212d3be79589a1|hash_0001026a351d4ff32906fd85570f1376f4c8f1|hash_000102e30bfeb739369b30df3a7784b3cf7648|hash_0001026b36bcc15e7a748d0468a5fb6cac211d|hash_000102bccf517b6e033d2782c0977073f9d092</items>
-			</hash_090102a3f20c4c1bcb24f67df2cad22a365fca>
-			<hash_090102650ed85fab2dbc7654e26477b4d358ed>
-				<name>Data Source [availReal]</name>
-				<description></description>
-				<column_name>task_item_id</column_name>
-				<items>hash_0001029a44cb92ae745e4c6f021689bacb75e7|hash_000102616bd6c7ec24a2e8d135f7fc901ad0e6|hash_000102a31bab249f909ff5b53e6e51dcfbf64e|hash_0001024f34c80eea4feaf5ba3a1be51b0e9610|hash_0001023e10cea5121314627c66065fc31c7f26</items>
-			</hash_090102650ed85fab2dbc7654e26477b4d358ed>
-			<hash_090102764efe201daa98091db299fa69800c7b>
-				<name>Data Source [usedSwap]</name>
-				<description></description>
-				<column_name>task_item_id</column_name>
-				<items>hash_000102162a54ee8030fb1db9ceac3ea3ea6186|hash_0001027486d99b05836b1c8af880c870ed24c2|hash_00010223d8a919ff2cc35c591e2b74b9b70398|hash_00010236b0b9f6acdcba944f370eedea9e070f|hash_000102d7a3bf67f6e3b7b1a7f724ad6c4e64ee</items>
-			</hash_090102764efe201daa98091db299fa69800c7b>
-			<hash_090102facebe169d128de8f7028bec4d4b3429>
-				<name>Data Source [memBuffer]</name>
-				<description></description>
-				<column_name>task_item_id</column_name>
-				<items>hash_0001024e2e4ffd3e1d8db0d8b522a12c599c6c|hash_000102f55a1bde7742f2f7b83cbff22eda0f0a|hash_000102e2a26becd72b542ae590e610d2b41357|hash_000102b248fa87ef7068ce4a59c27901d84c5c|hash_000102bf251c6162c7e6194e424c0a3f15cf63</items>
-			</hash_090102facebe169d128de8f7028bec4d4b3429>
-		</inputs>
-	</hash_000102417710a0cad0af62c9cfc43e724b46bd>
 	<hash_00010206621cd4a9289417cadcb8f9b5cfba80>
-		<name>GT - Interface - Errors/Discards</name>
+		<name>Interface - Errors/Discards</name>
 		<graph>
 			<t_title>on</t_title>
 			<title>|host_description| - Errors/Discards</title>
@@ -1814,9 +1498,9 @@
 			<t_right_axis_format></t_right_axis_format>
 			<right_axis_format>0</right_axis_format>
 			<t_right_axis_formatter></t_right_axis_formatter>
-			<right_axis_formatter>0</right_axis_formatter>
+			<right_axis_formatter></right_axis_formatter>
 			<t_left_axis_formatter></t_left_axis_formatter>
-			<left_axis_formatter>0</left_axis_formatter>
+			<left_axis_formatter></left_axis_formatter>
 			<t_auto_padding></t_auto_padding>
 			<auto_padding>on</auto_padding>
 			<t_dynamic_labels></t_dynamic_labels>
@@ -1826,9 +1510,9 @@
 			<t_tab_width></t_tab_width>
 			<tab_width></tab_width>
 			<t_legend_position></t_legend_position>
-			<legend_position>0</legend_position>
+			<legend_position></legend_position>
 			<t_legend_direction></t_legend_direction>
-			<legend_direction>0</legend_direction>
+			<legend_direction></legend_direction>
 		</graph>
 		<items>
 			<hash_1001027e04a041721df1f8828381a9ea2f2154>
@@ -2164,7 +1848,7 @@
 		</inputs>
 	</hash_00010206621cd4a9289417cadcb8f9b5cfba80>
 	<hash_000102df9f91bd5dd41401ea9ea6351210bc29>
-		<name>GT - Interface - Traffic (bps)</name>
+		<name>GT - Interface - Traffic bps</name>
 		<graph>
 			<t_title>on</t_title>
 			<title>|host_description| - Traffic</title>
@@ -2230,7 +1914,7 @@
 		<items>
 			<hash_100102effa0e816bcfc396a5b36494ba285004>
 				<graph_type_id>4</graph_type_id>
-				<task_item_id>hash_0801022df25c57022b0c7e7d0be4c035ada1a0</task_item_id>
+				<task_item_id>hash_0801022027e9d39f1ce227a90ecc275b120326</task_item_id>
 				<color_id>0000FF</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>1</consolidation_function_id>
@@ -2249,7 +1933,7 @@
 			</hash_100102effa0e816bcfc396a5b36494ba285004>
 			<hash_100102d591ec9a328e8a3689f3aa25f748f7fc>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801022df25c57022b0c7e7d0be4c035ada1a0</task_item_id>
+				<task_item_id>hash_0801022027e9d39f1ce227a90ecc275b120326</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>4</consolidation_function_id>
@@ -2268,7 +1952,7 @@
 			</hash_100102d591ec9a328e8a3689f3aa25f748f7fc>
 			<hash_100102a6b0116097f55fa5d665f6da9983b821>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801022df25c57022b0c7e7d0be4c035ada1a0</task_item_id>
+				<task_item_id>hash_0801022027e9d39f1ce227a90ecc275b120326</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>1</consolidation_function_id>
@@ -2287,7 +1971,7 @@
 			</hash_100102a6b0116097f55fa5d665f6da9983b821>
 			<hash_100102862f5a0a74d871aca336f8f17ae1aa40>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801022df25c57022b0c7e7d0be4c035ada1a0</task_item_id>
+				<task_item_id>hash_0801022027e9d39f1ce227a90ecc275b120326</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>3</consolidation_function_id>
@@ -2306,7 +1990,7 @@
 			</hash_100102862f5a0a74d871aca336f8f17ae1aa40>
 			<hash_100102251b3b0ea0d096c4ca2c4fd6678155e7>
 				<graph_type_id>4</graph_type_id>
-				<task_item_id>hash_080102721c0794526d1ac1c359f27dc56faa49</task_item_id>
+				<task_item_id>hash_080102465854e82ea0fff5bcb75f76cb4dd60a</task_item_id>
 				<color_id>FF0000</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>1</consolidation_function_id>
@@ -2325,7 +2009,7 @@
 			</hash_100102251b3b0ea0d096c4ca2c4fd6678155e7>
 			<hash_10010236d033d65e71de593c6a815ce0791b69>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102721c0794526d1ac1c359f27dc56faa49</task_item_id>
+				<task_item_id>hash_080102465854e82ea0fff5bcb75f76cb4dd60a</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>4</consolidation_function_id>
@@ -2344,7 +2028,7 @@
 			</hash_10010236d033d65e71de593c6a815ce0791b69>
 			<hash_10010241e2d26b7e58cae067adc6a1453cdebe>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102721c0794526d1ac1c359f27dc56faa49</task_item_id>
+				<task_item_id>hash_080102465854e82ea0fff5bcb75f76cb4dd60a</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>1</consolidation_function_id>
@@ -2363,7 +2047,7 @@
 			</hash_10010241e2d26b7e58cae067adc6a1453cdebe>
 			<hash_10010286a0231e48561c418cf7c20ddd4847e9>
 				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102721c0794526d1ac1c359f27dc56faa49</task_item_id>
+				<task_item_id>hash_080102465854e82ea0fff5bcb75f76cb4dd60a</task_item_id>
 				<color_id>0</color_id>
 				<alpha>FF</alpha>
 				<consolidation_function_id>3</consolidation_function_id>
@@ -2382,581 +2066,94 @@
 			</hash_10010286a0231e48561c418cf7c20ddd4847e9>
 		</items>
 		<inputs>
-			<hash_090102717eebf1e91cc60275f4bb823abe5fcf>
+			<hash_0901023254a12f3071b7b35d7ca078db94288e>
 				<name>Data Source [traffic_in]</name>
 				<description></description>
 				<column_name>task_item_id</column_name>
 				<items>hash_000102effa0e816bcfc396a5b36494ba285004|hash_000102d591ec9a328e8a3689f3aa25f748f7fc|hash_000102a6b0116097f55fa5d665f6da9983b821|hash_000102862f5a0a74d871aca336f8f17ae1aa40</items>
-			</hash_090102717eebf1e91cc60275f4bb823abe5fcf>
-			<hash_090102b9e90b1ce118ec56a1e70bdf8ab78e09>
+			</hash_0901023254a12f3071b7b35d7ca078db94288e>
+			<hash_0901027d8c255155a85dd3122d3560ea45a0f1>
 				<name>Data Source [traffic_out]</name>
 				<description></description>
 				<column_name>task_item_id</column_name>
 				<items>hash_000102251b3b0ea0d096c4ca2c4fd6678155e7|hash_00010236d033d65e71de593c6a815ce0791b69|hash_00010241e2d26b7e58cae067adc6a1453cdebe|hash_00010286a0231e48561c418cf7c20ddd4847e9</items>
-			</hash_090102b9e90b1ce118ec56a1e70bdf8ab78e09>
+			</hash_0901027d8c255155a85dd3122d3560ea45a0f1>
 		</inputs>
 	</hash_000102df9f91bd5dd41401ea9ea6351210bc29>
-	<hash_00010248d8631be3bd9c586bf23cc094a24a31>
-		<name>GT - Disk/Memory Usage Bytes</name>
-		<graph>
-			<t_title>on</t_title>
-			<title>|host_description| - Disk Memory Usage Bytes</title>
-			<t_vertical_label></t_vertical_label>
-			<vertical_label>byte</vertical_label>
-			<t_image_format_id></t_image_format_id>
-			<image_format_id>1</image_format_id>
-			<t_height></t_height>
-			<height>200</height>
-			<t_width></t_width>
-			<width>700</width>
-			<t_base_value></t_base_value>
-			<base_value>1024</base_value>
-			<t_slope_mode></t_slope_mode>
-			<slope_mode>on</slope_mode>
-			<t_auto_scale></t_auto_scale>
-			<auto_scale>on</auto_scale>
-			<t_auto_scale_opts></t_auto_scale_opts>
-			<auto_scale_opts>2</auto_scale_opts>
-			<t_auto_scale_log></t_auto_scale_log>
-			<auto_scale_log></auto_scale_log>
-			<t_scale_log_units></t_scale_log_units>
-			<scale_log_units></scale_log_units>
-			<t_auto_scale_rigid></t_auto_scale_rigid>
-			<auto_scale_rigid>on</auto_scale_rigid>
-			<t_upper_limit></t_upper_limit>
-			<upper_limit>100</upper_limit>
-			<t_lower_limit></t_lower_limit>
-			<lower_limit>0</lower_limit>
-			<t_unit_value></t_unit_value>
-			<unit_value></unit_value>
-			<t_unit_exponent_value></t_unit_exponent_value>
-			<unit_exponent_value></unit_exponent_value>
-			<t_unit_length></t_unit_length>
-			<unit_length></unit_length>
-			<t_no_gridfit></t_no_gridfit>
-			<no_gridfit></no_gridfit>
-			<t_alt_y_grid></t_alt_y_grid>
-			<alt_y_grid></alt_y_grid>
-			<t_right_axis></t_right_axis>
-			<right_axis></right_axis>
-			<t_right_axis_label></t_right_axis_label>
-			<right_axis_label></right_axis_label>
-			<t_right_axis_format></t_right_axis_format>
-			<right_axis_format>0</right_axis_format>
-			<t_right_axis_formatter></t_right_axis_formatter>
-			<right_axis_formatter>0</right_axis_formatter>
-			<t_left_axis_formatter></t_left_axis_formatter>
-			<left_axis_formatter>0</left_axis_formatter>
-			<t_auto_padding></t_auto_padding>
-			<auto_padding>on</auto_padding>
-			<t_dynamic_labels></t_dynamic_labels>
-			<dynamic_labels></dynamic_labels>
-			<t_force_rules_legend></t_force_rules_legend>
-			<force_rules_legend></force_rules_legend>
-			<t_tab_width></t_tab_width>
-			<tab_width>40</tab_width>
-			<t_legend_position></t_legend_position>
-			<legend_position>0</legend_position>
-			<t_legend_direction></t_legend_direction>
-			<legend_direction>0</legend_direction>
-		</graph>
+	<hash_010102d9231d03b0a160ba8f3ec82a43c503e9>
+		<name>Device - Polling Time</name>
+		<ds>
+			<t_name></t_name>
+			<name>|host_description| - Polling Time</name>
+			<data_source_path></data_source_path>
+			<data_input_id>hash_030102e4a60e4b8da9689294450dd161580dbd</data_input_id>
+			<t_data_source_profile_id></t_data_source_profile_id>
+			<data_source_profile_id>hash_2001023e0761d884720dc638e4e9da8050b323</data_source_profile_id>
+			<t_rrd_step></t_rrd_step>
+			<rrd_step>30</rrd_step>
+			<t_active></t_active>
+			<active>on</active>
+		</ds>
 		<items>
-			<hash_100102a3f9778e32da5af816b7f0cdf1b52f8e>
-				<graph_type_id>8</graph_type_id>
-				<task_item_id>hash_0801020ee6bb54957f6795a5369a29f818d860</task_item_id>
-				<color_id>800517</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Used</text_format>
-				<hard_return></hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>2</sequence>
-			</hash_100102a3f9778e32da5af816b7f0cdf1b52f8e>
-			<hash_1001025b97529aa3292bcb609b56ca63c9dcdd>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801020ee6bb54957f6795a5369a29f818d860</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>4</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Current:</text_format>
-				<hard_return></hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>3</sequence>
-			</hash_1001025b97529aa3292bcb609b56ca63c9dcdd>
-			<hash_10010220d8196532c1e1ffa01d7fc53b106ad2>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801020ee6bb54957f6795a5369a29f818d860</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Avg:</text_format>
-				<hard_return></hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>4</sequence>
-			</hash_10010220d8196532c1e1ffa01d7fc53b106ad2>
-			<hash_10010251dfb363f3c6ebe44480852982fd771e>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801020ee6bb54957f6795a5369a29f818d860</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>2</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Min:</text_format>
-				<hard_return></hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>5</sequence>
-			</hash_10010251dfb363f3c6ebe44480852982fd771e>
-			<hash_100102809f6fde00524653831ddc4be8aa4845>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801020ee6bb54957f6795a5369a29f818d860</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>3</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Max:</text_format>
-				<hard_return>on</hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>6</sequence>
-			</hash_100102809f6fde00524653831ddc4be8aa4845>
-			<hash_1001026553366428b63ffbad7bcf6a6a1905f5>
-				<graph_type_id>8</graph_type_id>
-				<task_item_id>hash_0801020ee6bb54957f6795a5369a29f818d860</task_item_id>
-				<color_id>0041C2</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>hash_05010230f2ff31b6944a59edf5a6966e667801</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Free</text_format>
-				<hard_return></hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>7</sequence>
-			</hash_1001026553366428b63ffbad7bcf6a6a1905f5>
-			<hash_1001025ea11dfcd8dedb7ac54cb6d0406f29d7>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801020ee6bb54957f6795a5369a29f818d860</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>4</consolidation_function_id>
-				<cdef_id>hash_05010230f2ff31b6944a59edf5a6966e667801</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Current:</text_format>
-				<hard_return></hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>8</sequence>
-			</hash_1001025ea11dfcd8dedb7ac54cb6d0406f29d7>
-			<hash_1001022f5741dc9719b1a7962bff36f0502c60>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801020ee6bb54957f6795a5369a29f818d860</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>hash_05010230f2ff31b6944a59edf5a6966e667801</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Avg:</text_format>
-				<hard_return></hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>9</sequence>
-			</hash_1001022f5741dc9719b1a7962bff36f0502c60>
-			<hash_1001026fc4c9314a2d07587133c8fc48b6b556>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801020ee6bb54957f6795a5369a29f818d860</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>2</consolidation_function_id>
-				<cdef_id>hash_05010230f2ff31b6944a59edf5a6966e667801</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Min:</text_format>
-				<hard_return></hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>10</sequence>
-			</hash_1001026fc4c9314a2d07587133c8fc48b6b556>
-			<hash_10010290177790d7edef4f2073d1a1b6c0693b>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801020ee6bb54957f6795a5369a29f818d860</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>3</consolidation_function_id>
-				<cdef_id>hash_05010230f2ff31b6944a59edf5a6966e667801</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Max:</text_format>
-				<hard_return>on</hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>11</sequence>
-			</hash_10010290177790d7edef4f2073d1a1b6c0693b>
-			<hash_100102c8494eeee60975f61a57aff38525f71c>
-				<graph_type_id>4</graph_type_id>
-				<task_item_id>hash_080102165a0da5f461561c85d092dfe96b9551</task_item_id>
-				<color_id>000000</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Total</text_format>
-				<hard_return></hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>12</sequence>
-			</hash_100102c8494eeee60975f61a57aff38525f71c>
-			<hash_100102c3b2ee460602de17e25b4dc032329984>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102165a0da5f461561c85d092dfe96b9551</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>4</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Current:</text_format>
-				<hard_return></hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>13</sequence>
-			</hash_100102c3b2ee460602de17e25b4dc032329984>
-			<hash_100102ab7d67991219d7791469a255db58e6fb>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102165a0da5f461561c85d092dfe96b9551</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Avg:</text_format>
-				<hard_return></hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>14</sequence>
-			</hash_100102ab7d67991219d7791469a255db58e6fb>
-			<hash_100102f3bea2e0cee6195df2b28fc38285216b>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102165a0da5f461561c85d092dfe96b9551</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>2</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Min:</text_format>
-				<hard_return></hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>15</sequence>
-			</hash_100102f3bea2e0cee6195df2b28fc38285216b>
-			<hash_1001020022641d6bbf14feb1da0d1f8559cc6f>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_080102165a0da5f461561c85d092dfe96b9551</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>3</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>Max:</text_format>
-				<hard_return>on</hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>16</sequence>
-			</hash_1001020022641d6bbf14feb1da0d1f8559cc6f>
-			<hash_100102e257e435503309a3056e5e02f49fbdcb>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801020ee6bb54957f6795a5369a29f818d860</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>4</consolidation_function_id>
-				<cdef_id>hash_0501020018d26bba5c3d108d4f9056bd9ec6b6</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_0601024e72328b57f5f2bb08a83a477b6cd10c</gprint_id>
-				<textalign></textalign>
-				<text_format>Utilization</text_format>
-				<hard_return></hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>17</sequence>
-			</hash_100102e257e435503309a3056e5e02f49fbdcb>
+			<hash_080102d87746b98b16ec2380f2dfa878a11a87>
+				<t_data_source_name></t_data_source_name>
+				<data_source_name>polling_time</data_source_name>
+				<t_rrd_minimum></t_rrd_minimum>
+				<rrd_minimum>0</rrd_minimum>
+				<t_rrd_maximum></t_rrd_maximum>
+				<rrd_maximum>U</rrd_maximum>
+				<t_data_source_type_id></t_data_source_type_id>
+				<data_source_type_id>1</data_source_type_id>
+				<rrd_heartbeat>600</rrd_heartbeat>
+				<t_data_input_field_id></t_data_input_field_id>
+				<data_input_field_id>hash_0701022187e7ac3bfefe37c8227e87bbf81d90</data_input_field_id>
+			</hash_080102d87746b98b16ec2380f2dfa878a11a87>
 		</items>
-		<inputs>
-			<hash_0901027bb645259d754fc54d350197b2b8d842>
-				<name>Data Source [hdd_total]</name>
-				<description></description>
-				<column_name>task_item_id</column_name>
-				<items></items>
-			</hash_0901027bb645259d754fc54d350197b2b8d842>
-			<hash_090102a548a1510e7c72efcbd9b45431d811a9>
-				<name>Data Source [hdd_used]</name>
-				<description></description>
-				<column_name>task_item_id</column_name>
-				<items>hash_000102a3f9778e32da5af816b7f0cdf1b52f8e|hash_0001025b97529aa3292bcb609b56ca63c9dcdd|hash_00010220d8196532c1e1ffa01d7fc53b106ad2|hash_00010251dfb363f3c6ebe44480852982fd771e|hash_000102809f6fde00524653831ddc4be8aa4845|hash_0001026553366428b63ffbad7bcf6a6a1905f5|hash_0001025ea11dfcd8dedb7ac54cb6d0406f29d7|hash_0001022f5741dc9719b1a7962bff36f0502c60|hash_0001026fc4c9314a2d07587133c8fc48b6b556|hash_00010290177790d7edef4f2073d1a1b6c0693b|hash_000102e257e435503309a3056e5e02f49fbdcb</items>
-			</hash_090102a548a1510e7c72efcbd9b45431d811a9>
-			<hash_090102658d5e2e10fa4145c43b3c63479cc36a>
-				<name>Data Source [hdd_total]</name>
-				<description></description>
-				<column_name>task_item_id</column_name>
-				<items>hash_000102c8494eeee60975f61a57aff38525f71c|hash_000102c3b2ee460602de17e25b4dc032329984|hash_000102ab7d67991219d7791469a255db58e6fb|hash_000102f3bea2e0cee6195df2b28fc38285216b|hash_0001020022641d6bbf14feb1da0d1f8559cc6f</items>
-			</hash_090102658d5e2e10fa4145c43b3c63479cc36a>
-		</inputs>
-	</hash_00010248d8631be3bd9c586bf23cc094a24a31>
-	<hash_000102c6bb62bedec4ab97f9db9fd780bd85a6>
-		<name>GT - CPU Usage Windows/Linux</name>
-		<graph>
-			<t_title>on</t_title>
-			<title>|host_description| - CPU Usage</title>
-			<t_vertical_label></t_vertical_label>
-			<vertical_label>percent</vertical_label>
-			<t_image_format_id></t_image_format_id>
-			<image_format_id>1</image_format_id>
-			<t_height></t_height>
-			<height>200</height>
-			<t_width></t_width>
-			<width>700</width>
-			<t_base_value></t_base_value>
-			<base_value>1000</base_value>
-			<t_slope_mode></t_slope_mode>
-			<slope_mode>on</slope_mode>
-			<t_auto_scale></t_auto_scale>
-			<auto_scale></auto_scale>
-			<t_auto_scale_opts></t_auto_scale_opts>
-			<auto_scale_opts>2</auto_scale_opts>
-			<t_auto_scale_log></t_auto_scale_log>
-			<auto_scale_log></auto_scale_log>
-			<t_scale_log_units></t_scale_log_units>
-			<scale_log_units></scale_log_units>
-			<t_auto_scale_rigid></t_auto_scale_rigid>
-			<auto_scale_rigid>on</auto_scale_rigid>
-			<t_upper_limit></t_upper_limit>
-			<upper_limit>100</upper_limit>
-			<t_lower_limit></t_lower_limit>
-			<lower_limit>0</lower_limit>
-			<t_unit_value></t_unit_value>
-			<unit_value></unit_value>
-			<t_unit_exponent_value></t_unit_exponent_value>
-			<unit_exponent_value></unit_exponent_value>
-			<t_unit_length></t_unit_length>
-			<unit_length></unit_length>
-			<t_no_gridfit></t_no_gridfit>
-			<no_gridfit></no_gridfit>
-			<t_alt_y_grid></t_alt_y_grid>
-			<alt_y_grid></alt_y_grid>
-			<t_right_axis></t_right_axis>
-			<right_axis></right_axis>
-			<t_right_axis_label></t_right_axis_label>
-			<right_axis_label></right_axis_label>
-			<t_right_axis_format></t_right_axis_format>
-			<right_axis_format>0</right_axis_format>
-			<t_right_axis_formatter></t_right_axis_formatter>
-			<right_axis_formatter>0</right_axis_formatter>
-			<t_left_axis_formatter></t_left_axis_formatter>
-			<left_axis_formatter>0</left_axis_formatter>
-			<t_auto_padding></t_auto_padding>
-			<auto_padding>on</auto_padding>
-			<t_dynamic_labels></t_dynamic_labels>
-			<dynamic_labels></dynamic_labels>
-			<t_force_rules_legend></t_force_rules_legend>
-			<force_rules_legend></force_rules_legend>
-			<t_tab_width></t_tab_width>
-			<tab_width>40</tab_width>
-			<t_legend_position></t_legend_position>
-			<legend_position>0</legend_position>
-			<t_legend_direction></t_legend_direction>
-			<legend_direction>0</legend_direction>
-		</graph>
+		<data>
+			<item_000>
+				<data_input_field_id>hash_07010208f589472a63becab00f661c311985e8</data_input_field_id>
+				<t_value></t_value>
+				<value></value>
+			</item_000>
+		</data>
+	</hash_010102d9231d03b0a160ba8f3ec82a43c503e9>
+	<hash_010102bb5b2aad7fd40afa8e35f62567d5c9c9>
+		<name>Device - Uptime</name>
+		<ds>
+			<t_name></t_name>
+			<name>|host_description| - Uptime</name>
+			<data_source_path></data_source_path>
+			<data_input_id>hash_030102bb8130b897891fbcb8d77fb74cbc1d67</data_input_id>
+			<t_data_source_profile_id></t_data_source_profile_id>
+			<data_source_profile_id>hash_2001023e0761d884720dc638e4e9da8050b323</data_source_profile_id>
+			<t_rrd_step></t_rrd_step>
+			<rrd_step>30</rrd_step>
+			<t_active></t_active>
+			<active>on</active>
+		</ds>
 		<items>
-			<hash_10010242537599b5fb8ea852240b58a58633de>
-				<graph_type_id>7</graph_type_id>
-				<task_item_id>hash_0801029825aaf7c0bdf1554c5b4b86680ac2c0</task_item_id>
-				<color_id>FF0000</color_id>
-				<alpha>7F</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format>CPU Utilization</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>1</sequence>
-			</hash_10010242537599b5fb8ea852240b58a58633de>
-			<hash_100102d478a76de1df9edf896c9ce51506c483>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801029825aaf7c0bdf1554c5b4b86680ac2c0</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>4</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_06010219414480d6897c8731c7dc6c5310653e</gprint_id>
-				<textalign></textalign>
-				<text_format>Current:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>2</sequence>
-			</hash_100102d478a76de1df9edf896c9ce51506c483>
-			<hash_1001028536e034ab5268a61473f1ff2f6bd88f>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801029825aaf7c0bdf1554c5b4b86680ac2c0</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>1</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_06010219414480d6897c8731c7dc6c5310653e</gprint_id>
-				<textalign></textalign>
-				<text_format>Average:</text_format>
-				<hard_return></hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>3</sequence>
-			</hash_1001028536e034ab5268a61473f1ff2f6bd88f>
-			<hash_10010287e10f9942b625aa323a0f39b60058e7>
-				<graph_type_id>9</graph_type_id>
-				<task_item_id>hash_0801029825aaf7c0bdf1554c5b4b86680ac2c0</task_item_id>
-				<color_id>0</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>3</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_06010219414480d6897c8731c7dc6c5310653e</gprint_id>
-				<textalign></textalign>
-				<text_format>Maximum:</text_format>
-				<hard_return>on</hard_return>
-				<line_width>0.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>4</sequence>
-			</hash_10010287e10f9942b625aa323a0f39b60058e7>
-			<hash_100102309fd90f1a335fc13383a332a06504f1>
-				<graph_type_id>4</graph_type_id>
-				<task_item_id>hash_0801029825aaf7c0bdf1554c5b4b86680ac2c0</task_item_id>
-				<color_id>FF0000</color_id>
-				<alpha>FF</alpha>
-				<consolidation_function_id>3</consolidation_function_id>
-				<cdef_id>0</cdef_id>
-				<vdef_id>0</vdef_id>
-				<shift></shift>
-				<value></value>
-				<gprint_id>hash_060102e9c43831e54eca8069317a2ce8c6f751</gprint_id>
-				<textalign></textalign>
-				<text_format></text_format>
-				<hard_return></hard_return>
-				<line_width>1.00</line_width>
-				<dashes></dashes>
-				<dash_offset>0</dash_offset>
-				<sequence>5</sequence>
-			</hash_100102309fd90f1a335fc13383a332a06504f1>
+			<hash_0801021330cb9379c39216c4c26b5457a3b1bd>
+				<t_data_source_name></t_data_source_name>
+				<data_source_name>uptime</data_source_name>
+				<t_rrd_minimum></t_rrd_minimum>
+				<rrd_minimum>0</rrd_minimum>
+				<t_rrd_maximum></t_rrd_maximum>
+				<rrd_maximum>U</rrd_maximum>
+				<t_data_source_type_id></t_data_source_type_id>
+				<data_source_type_id>1</data_source_type_id>
+				<rrd_heartbeat>600</rrd_heartbeat>
+				<t_data_input_field_id></t_data_input_field_id>
+				<data_input_field_id>hash_070102cdd10c4aa321bb14ba8b0a5f6e62d06a</data_input_field_id>
+			</hash_0801021330cb9379c39216c4c26b5457a3b1bd>
 		</items>
-		<inputs>
-			<hash_090102bdad718851a52b82eca0a310b0238450>
-				<name>CPU Utilization Data Source</name>
-				<description></description>
-				<column_name>task_item_id</column_name>
-				<items>hash_00010242537599b5fb8ea852240b58a58633de|hash_000102d478a76de1df9edf896c9ce51506c483|hash_0001028536e034ab5268a61473f1ff2f6bd88f|hash_00010287e10f9942b625aa323a0f39b60058e7|hash_000102309fd90f1a335fc13383a332a06504f1</items>
-			</hash_090102bdad718851a52b82eca0a310b0238450>
-		</inputs>
-	</hash_000102c6bb62bedec4ab97f9db9fd780bd85a6>
+		<data>
+			<item_000>
+				<data_input_field_id>hash_070102746674cef4830927324742cbac124a19</data_input_field_id>
+				<t_value></t_value>
+				<value></value>
+			</item_000>
+		</data>
+	</hash_010102bb5b2aad7fd40afa8e35f62567d5c9c9>
 	<hash_01010204ef4da0d125620474bcbb3a72c7356c>
 		<name>PING - Advanced Ping</name>
 		<ds>
@@ -2965,9 +2162,9 @@
 			<data_source_path></data_source_path>
 			<data_input_id>hash_0301024427395a6ecd5bc2af34a3488ee0221b</data_input_id>
 			<t_data_source_profile_id></t_data_source_profile_id>
-			<data_source_profile_id>hash_20010272ebeba35b3a812a9ab9719cbcb0b7d4</data_source_profile_id>
+			<data_source_profile_id>hash_2001023e0761d884720dc638e4e9da8050b323</data_source_profile_id>
 			<t_rrd_step></t_rrd_step>
-			<rrd_step>300</rrd_step>
+			<rrd_step>30</rrd_step>
 			<t_active></t_active>
 			<active>on</active>
 		</ds>
@@ -3066,218 +2263,17 @@
 			</item_003>
 		</data>
 	</hash_01010204ef4da0d125620474bcbb3a72c7356c>
-	<hash_010102249be02203394c342a340756d81b0d74>
-		<name>DT - Linux Memory Usage</name>
-		<ds>
-			<t_name></t_name>
-			<name>|host_description| - Memory Usage</name>
-			<data_source_path></data_source_path>
-			<data_input_id>hash_0301028e556220d403fc98b23e690088f96474</data_input_id>
-			<t_data_source_profile_id></t_data_source_profile_id>
-			<data_source_profile_id>hash_20010272ebeba35b3a812a9ab9719cbcb0b7d4</data_source_profile_id>
-			<t_rrd_step></t_rrd_step>
-			<rrd_step>300</rrd_step>
-			<t_active></t_active>
-			<active>on</active>
-		</ds>
-		<items>
-			<hash_080102a05184f5255edf0d433cb818b788afce>
-				<t_data_source_name></t_data_source_name>
-				<data_source_name>usedReal</data_source_name>
-				<t_rrd_minimum></t_rrd_minimum>
-				<rrd_minimum>0</rrd_minimum>
-				<t_rrd_maximum></t_rrd_maximum>
-				<rrd_maximum>U</rrd_maximum>
-				<t_data_source_type_id></t_data_source_type_id>
-				<data_source_type_id>1</data_source_type_id>
-				<t_rrd_heartbeat></t_rrd_heartbeat>
-				<rrd_heartbeat>600</rrd_heartbeat>
-				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_070102787d10e5e6346e77d8ecfd95551f60b7</data_input_field_id>
-			</hash_080102a05184f5255edf0d433cb818b788afce>
-			<hash_080102ca3b962da8cf74165184937db6d368dc>
-				<t_data_source_name></t_data_source_name>
-				<data_source_name>totalReal</data_source_name>
-				<t_rrd_minimum></t_rrd_minimum>
-				<rrd_minimum>0</rrd_minimum>
-				<t_rrd_maximum></t_rrd_maximum>
-				<rrd_maximum>U</rrd_maximum>
-				<t_data_source_type_id></t_data_source_type_id>
-				<data_source_type_id>1</data_source_type_id>
-				<t_rrd_heartbeat></t_rrd_heartbeat>
-				<rrd_heartbeat>600</rrd_heartbeat>
-				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_07010245d116204cdaa69672da40681d73175d</data_input_field_id>
-			</hash_080102ca3b962da8cf74165184937db6d368dc>
-			<hash_0801026584c1db510c08785e6ec50dc7f8f34e>
-				<t_data_source_name></t_data_source_name>
-				<data_source_name>memCached</data_source_name>
-				<t_rrd_minimum></t_rrd_minimum>
-				<rrd_minimum>0</rrd_minimum>
-				<t_rrd_maximum></t_rrd_maximum>
-				<rrd_maximum>U</rrd_maximum>
-				<t_data_source_type_id></t_data_source_type_id>
-				<data_source_type_id>1</data_source_type_id>
-				<t_rrd_heartbeat></t_rrd_heartbeat>
-				<rrd_heartbeat>600</rrd_heartbeat>
-				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_0701025618afca552b03cc8c893bf347b81b82</data_input_field_id>
-			</hash_0801026584c1db510c08785e6ec50dc7f8f34e>
-			<hash_080102f16053962f2fd6b4ba15a6e20f9042f8>
-				<t_data_source_name></t_data_source_name>
-				<data_source_name>memBuffer</data_source_name>
-				<t_rrd_minimum></t_rrd_minimum>
-				<rrd_minimum>0</rrd_minimum>
-				<t_rrd_maximum></t_rrd_maximum>
-				<rrd_maximum>U</rrd_maximum>
-				<t_data_source_type_id></t_data_source_type_id>
-				<data_source_type_id>1</data_source_type_id>
-				<t_rrd_heartbeat></t_rrd_heartbeat>
-				<rrd_heartbeat>600</rrd_heartbeat>
-				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_070102bb667f71df75ca81072155693a7456a8</data_input_field_id>
-			</hash_080102f16053962f2fd6b4ba15a6e20f9042f8>
-			<hash_08010206d29dbf98ea4321a24e6fb118f73715>
-				<t_data_source_name></t_data_source_name>
-				<data_source_name>availSwap</data_source_name>
-				<t_rrd_minimum></t_rrd_minimum>
-				<rrd_minimum>0</rrd_minimum>
-				<t_rrd_maximum></t_rrd_maximum>
-				<rrd_maximum>U</rrd_maximum>
-				<t_data_source_type_id></t_data_source_type_id>
-				<data_source_type_id>1</data_source_type_id>
-				<t_rrd_heartbeat></t_rrd_heartbeat>
-				<rrd_heartbeat>600</rrd_heartbeat>
-				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_07010270d411e4f07f74fa5cf1ef4d4c29bf9c</data_input_field_id>
-			</hash_08010206d29dbf98ea4321a24e6fb118f73715>
-			<hash_0801021b9090d854db561b22be5b9ee9faac92>
-				<t_data_source_name></t_data_source_name>
-				<data_source_name>totalSwap</data_source_name>
-				<t_rrd_minimum></t_rrd_minimum>
-				<rrd_minimum>0</rrd_minimum>
-				<t_rrd_maximum></t_rrd_maximum>
-				<rrd_maximum>U</rrd_maximum>
-				<t_data_source_type_id></t_data_source_type_id>
-				<data_source_type_id>1</data_source_type_id>
-				<t_rrd_heartbeat></t_rrd_heartbeat>
-				<rrd_heartbeat>600</rrd_heartbeat>
-				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_070102df81713f892f4e969b77dd6d948a79c4</data_input_field_id>
-			</hash_0801021b9090d854db561b22be5b9ee9faac92>
-			<hash_0801023733b38d9d8f13e3fb56d1d8a2fc926c>
-				<t_data_source_name></t_data_source_name>
-				<data_source_name>availReal</data_source_name>
-				<t_rrd_minimum></t_rrd_minimum>
-				<rrd_minimum>0</rrd_minimum>
-				<t_rrd_maximum></t_rrd_maximum>
-				<rrd_maximum>U</rrd_maximum>
-				<t_data_source_type_id></t_data_source_type_id>
-				<data_source_type_id>1</data_source_type_id>
-				<t_rrd_heartbeat></t_rrd_heartbeat>
-				<rrd_heartbeat>600</rrd_heartbeat>
-				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_0701025aca8602e80d9061f0bc3253ccea760d</data_input_field_id>
-			</hash_0801023733b38d9d8f13e3fb56d1d8a2fc926c>
-			<hash_0801028c61f584d287664da6f4a1a3ac299930>
-				<t_data_source_name></t_data_source_name>
-				<data_source_name>usedSwap</data_source_name>
-				<t_rrd_minimum></t_rrd_minimum>
-				<rrd_minimum>0</rrd_minimum>
-				<t_rrd_maximum></t_rrd_maximum>
-				<rrd_maximum>U</rrd_maximum>
-				<t_data_source_type_id></t_data_source_type_id>
-				<data_source_type_id>1</data_source_type_id>
-				<t_rrd_heartbeat></t_rrd_heartbeat>
-				<rrd_heartbeat>600</rrd_heartbeat>
-				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>hash_070102c5fed724e9aba2b0467c36d053b748fa</data_input_field_id>
-			</hash_0801028c61f584d287664da6f4a1a3ac299930>
-		</items>
-		<data>
-			<item_000>
-				<data_input_field_id>hash_07010292f5906c8dc0f964b41f4253df582c38</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_000>
-			<item_001>
-				<data_input_field_id>hash_07010232285d5bf16e56c478f5e83f32cda9ef</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_001>
-			<item_002>
-				<data_input_field_id>hash_070102ad14ac90641aed388139f6ba86a2e48b</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_002>
-			<item_003>
-				<data_input_field_id>hash_0701024d495e10d1c702485c4753bdc41910d6</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_003>
-			<item_004>
-				<data_input_field_id>hash_0701024c04a173fca89d42f85ef40a68d3af37</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_004>
-			<item_005>
-				<data_input_field_id>hash_0701026d4cbe6e6cd5e5ce6c534356559a9536</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_005>
-			<item_006>
-				<data_input_field_id>hash_070102e3265a4de7e403ecb80cc36e0875aa67</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_006>
-			<item_007>
-				<data_input_field_id>hash_07010267d9e6b66844aa5d966a5fa798817456</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_007>
-			<item_008>
-				<data_input_field_id>hash_0701026239cfa08a3fbaf0085780fc90efb1eb</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_008>
-			<item_009>
-				<data_input_field_id>hash_07010247d9bb7e51bfde0d28835501dbd35381</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_009>
-			<item_010>
-				<data_input_field_id>hash_0701023d0bf842d3270f6654635d0c8923326b</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_010>
-			<item_011>
-				<data_input_field_id>hash_070102e8e8364aa007bc128f9dc6573edb80f2</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_011>
-			<item_012>
-				<data_input_field_id>hash_070102efb315ca833edf089a77eee2b43c61b6</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_012>
-			<item_013>
-				<data_input_field_id>hash_070102eb8b1cb39b9c284ed08d77db79ae98f7</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_013>
-		</data>
-	</hash_010102249be02203394c342a340756d81b0d74>
 	<hash_01010236335cd98633963a575b70639cd2fdad>
-		<name>DT - Interface - Errors/Discards</name>
+		<name>Interface - Errors/Discards</name>
 		<ds>
 			<t_name>on</t_name>
 			<name>|host_description| - Errors/Discards</name>
 			<data_source_path></data_source_path>
 			<data_input_id>hash_030102bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 			<t_data_source_profile_id></t_data_source_profile_id>
-			<data_source_profile_id>hash_20010272ebeba35b3a812a9ab9719cbcb0b7d4</data_source_profile_id>
+			<data_source_profile_id>hash_2001023e0761d884720dc638e4e9da8050b323</data_source_profile_id>
 			<t_rrd_step></t_rrd_step>
-			<rrd_step>300</rrd_step>
+			<rrd_step>30</rrd_step>
 			<t_active></t_active>
 			<active>on</active>
 		</ds>
@@ -3341,83 +2337,78 @@
 		</items>
 		<data>
 			<item_000>
-				<data_input_field_id>hash_070102617cdc8a230615e59f06f361ef6e7728</data_input_field_id>
+				<data_input_field_id>hash_07010292f5906c8dc0f964b41f4253df582c38</data_input_field_id>
 				<t_value></t_value>
 				<value></value>
 			</item_000>
 			<item_001>
-				<data_input_field_id>hash_070102acb449d1451e8a2a655c2c99d31142c7</data_input_field_id>
+				<data_input_field_id>hash_07010232285d5bf16e56c478f5e83f32cda9ef</data_input_field_id>
 				<t_value></t_value>
 				<value></value>
 			</item_001>
 			<item_002>
-				<data_input_field_id>hash_070102f4facc5e2ca7ebee621f09bc6d9fc792</data_input_field_id>
+				<data_input_field_id>hash_070102617cdc8a230615e59f06f361ef6e7728</data_input_field_id>
 				<t_value></t_value>
 				<value></value>
 			</item_002>
 			<item_003>
-				<data_input_field_id>hash_0701021cc1493a6781af2c478fa4de971531cf</data_input_field_id>
+				<data_input_field_id>hash_070102acb449d1451e8a2a655c2c99d31142c7</data_input_field_id>
 				<t_value></t_value>
 				<value></value>
 			</item_003>
 			<item_004>
-				<data_input_field_id>hash_070102b5c23f246559df38662c255f4aa21d6b</data_input_field_id>
+				<data_input_field_id>hash_070102f4facc5e2ca7ebee621f09bc6d9fc792</data_input_field_id>
 				<t_value></t_value>
 				<value></value>
 			</item_004>
 			<item_005>
-				<data_input_field_id>hash_0701026027a919c7c7731fbe095b6f53ab127b</data_input_field_id>
-				<t_value>on</t_value>
+				<data_input_field_id>hash_0701021cc1493a6781af2c478fa4de971531cf</data_input_field_id>
+				<t_value></t_value>
 				<value></value>
 			</item_005>
 			<item_006>
-				<data_input_field_id>hash_070102cbbe5c1ddfb264a6e5d509ce1c78c95f</data_input_field_id>
-				<t_value>on</t_value>
+				<data_input_field_id>hash_070102b5c23f246559df38662c255f4aa21d6b</data_input_field_id>
+				<t_value></t_value>
 				<value></value>
 			</item_006>
 			<item_007>
-				<data_input_field_id>hash_070102e6deda7be0f391399c5130e7c4a48b28</data_input_field_id>
+				<data_input_field_id>hash_0701026027a919c7c7731fbe095b6f53ab127b</data_input_field_id>
 				<t_value>on</t_value>
 				<value></value>
 			</item_007>
 			<item_008>
-				<data_input_field_id>hash_070102c1f36ee60c3dc98945556d57f26e475b</data_input_field_id>
-				<t_value></t_value>
+				<data_input_field_id>hash_070102cbbe5c1ddfb264a6e5d509ce1c78c95f</data_input_field_id>
+				<t_value>on</t_value>
 				<value></value>
 			</item_008>
 			<item_009>
-				<data_input_field_id>hash_0701022cf7129ad3ff819a7a7ac189bee48ce8</data_input_field_id>
-				<t_value></t_value>
+				<data_input_field_id>hash_070102e6deda7be0f391399c5130e7c4a48b28</data_input_field_id>
+				<t_value>on</t_value>
 				<value></value>
 			</item_009>
 			<item_010>
-				<data_input_field_id>hash_0701026b13ac0a0194e171d241d4b06f913158</data_input_field_id>
+				<data_input_field_id>hash_070102c1f36ee60c3dc98945556d57f26e475b</data_input_field_id>
 				<t_value></t_value>
 				<value></value>
 			</item_010>
-			<item_011>
-				<data_input_field_id>hash_0701023a33d4fc65b8329ab2ac46a36da26b72</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_011>
 		</data>
 	</hash_01010236335cd98633963a575b70639cd2fdad>
-	<hash_0101026632e1e0b58a565c135d7ff90440c335>
-		<name>DT - Interface - Traffic (bps)</name>
+	<hash_010102fbbf287d183856a24d1aa3976f9461cf>
+		<name>DT - Interface - Traffic bps</name>
 		<ds>
 			<t_name>on</t_name>
 			<name>|host_description| - Traffic</name>
 			<data_source_path></data_source_path>
 			<data_input_id>hash_030102bf566c869ac6443b0c75d1c32b5a350e</data_input_id>
 			<t_data_source_profile_id></t_data_source_profile_id>
-			<data_source_profile_id>hash_20010272ebeba35b3a812a9ab9719cbcb0b7d4</data_source_profile_id>
+			<data_source_profile_id>hash_2001023e0761d884720dc638e4e9da8050b323</data_source_profile_id>
 			<t_rrd_step></t_rrd_step>
-			<rrd_step>300</rrd_step>
+			<rrd_step>30</rrd_step>
 			<t_active></t_active>
 			<active>on</active>
 		</ds>
 		<items>
-			<hash_0801022df25c57022b0c7e7d0be4c035ada1a0>
+			<hash_0801022027e9d39f1ce227a90ecc275b120326>
 				<t_data_source_name></t_data_source_name>
 				<data_source_name>traffic_in</data_source_name>
 				<t_rrd_minimum></t_rrd_minimum>
@@ -3427,11 +2418,11 @@
 				<t_data_source_type_id></t_data_source_type_id>
 				<data_source_type_id>2</data_source_type_id>
 				<t_rrd_heartbeat></t_rrd_heartbeat>
-				<rrd_heartbeat>600</rrd_heartbeat>
+				<rrd_heartbeat>60</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
 				<data_input_field_id>0</data_input_field_id>
-			</hash_0801022df25c57022b0c7e7d0be4c035ada1a0>
-			<hash_080102721c0794526d1ac1c359f27dc56faa49>
+			</hash_0801022027e9d39f1ce227a90ecc275b120326>
+			<hash_080102465854e82ea0fff5bcb75f76cb4dd60a>
 				<t_data_source_name></t_data_source_name>
 				<data_source_name>traffic_out</data_source_name>
 				<t_rrd_minimum></t_rrd_minimum>
@@ -3441,10 +2432,10 @@
 				<t_data_source_type_id></t_data_source_type_id>
 				<data_source_type_id>2</data_source_type_id>
 				<t_rrd_heartbeat></t_rrd_heartbeat>
-				<rrd_heartbeat>600</rrd_heartbeat>
+				<rrd_heartbeat>60</rrd_heartbeat>
 				<t_data_input_field_id></t_data_input_field_id>
 				<data_input_field_id>0</data_input_field_id>
-			</hash_080102721c0794526d1ac1c359f27dc56faa49>
+			</hash_080102465854e82ea0fff5bcb75f76cb4dd60a>
 		</items>
 		<data>
 			<item_000>
@@ -3523,132 +2514,57 @@
 				<value></value>
 			</item_014>
 		</data>
-	</hash_0101026632e1e0b58a565c135d7ff90440c335>
-	<hash_010102d814fa3b79bd0f8933b6e0834d3f16d0>
-		<name>DT - Disk/Memory Usage Bytes</name>
-		<ds>
-			<t_name></t_name>
-			<name>|host_description| - Hard Drive Space</name>
-			<data_source_path></data_source_path>
-			<data_input_id>hash_030102332111d8b54ac8ce939af87a7eac0c06</data_input_id>
-			<t_data_source_profile_id></t_data_source_profile_id>
-			<data_source_profile_id>hash_20010272ebeba35b3a812a9ab9719cbcb0b7d4</data_source_profile_id>
-			<t_rrd_step></t_rrd_step>
-			<rrd_step>300</rrd_step>
-			<t_active></t_active>
-			<active>on</active>
-		</ds>
-		<items>
-			<hash_0801020ee6bb54957f6795a5369a29f818d860>
-				<t_data_source_name></t_data_source_name>
-				<data_source_name>hdd_used</data_source_name>
-				<t_rrd_minimum></t_rrd_minimum>
-				<rrd_minimum>0</rrd_minimum>
-				<t_rrd_maximum></t_rrd_maximum>
-				<rrd_maximum>U</rrd_maximum>
-				<t_data_source_type_id></t_data_source_type_id>
-				<data_source_type_id>1</data_source_type_id>
-				<t_rrd_heartbeat></t_rrd_heartbeat>
-				<rrd_heartbeat>600</rrd_heartbeat>
-				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>0</data_input_field_id>
-			</hash_0801020ee6bb54957f6795a5369a29f818d860>
-			<hash_080102165a0da5f461561c85d092dfe96b9551>
-				<t_data_source_name></t_data_source_name>
-				<data_source_name>hdd_total</data_source_name>
-				<t_rrd_minimum></t_rrd_minimum>
-				<rrd_minimum>0</rrd_minimum>
-				<t_rrd_maximum></t_rrd_maximum>
-				<rrd_maximum>U</rrd_maximum>
-				<t_data_source_type_id></t_data_source_type_id>
-				<data_source_type_id>1</data_source_type_id>
-				<t_rrd_heartbeat></t_rrd_heartbeat>
-				<rrd_heartbeat>600</rrd_heartbeat>
-				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>0</data_input_field_id>
-			</hash_080102165a0da5f461561c85d092dfe96b9551>
-		</items>
-		<data>
-			<item_000>
-				<data_input_field_id>hash_07010292f5906c8dc0f964b41f4253df582c38</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_000>
-			<item_001>
-				<data_input_field_id>hash_07010232285d5bf16e56c478f5e83f32cda9ef</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_001>
-			<item_002>
-				<data_input_field_id>hash_070102ad14ac90641aed388139f6ba86a2e48b</data_input_field_id>
-				<t_value></t_value>
-				<value></value>
-			</item_002>
-			<item_003>
-				<data_input_field_id>hash_070102172b4b0eacee4948c6479f587b62e512</data_input_field_id>
-				<t_value>on</t_value>
-				<value></value>
-			</item_003>
-			<item_004>
-				<data_input_field_id>hash_07010230fb5d5bcf3d66bb5abe88596f357c26</data_input_field_id>
-				<t_value>on</t_value>
-				<value></value>
-			</item_004>
-			<item_005>
-				<data_input_field_id>hash_07010231112c85ae4ff821d3b288336288818c</data_input_field_id>
-				<t_value>on</t_value>
-				<value></value>
-			</item_005>
-		</data>
-	</hash_010102d814fa3b79bd0f8933b6e0834d3f16d0>
-	<hash_010102f6e7d21c19434666bbdac00ccef9932f>
-		<name>DT - CPU Usage Windows/Linux </name>
-		<ds>
-			<t_name></t_name>
-			<name>|host_description| - CPU Utilization</name>
-			<data_source_path></data_source_path>
-			<data_input_id>hash_030102332111d8b54ac8ce939af87a7eac0c06</data_input_id>
-			<t_data_source_profile_id></t_data_source_profile_id>
-			<data_source_profile_id>hash_20010272ebeba35b3a812a9ab9719cbcb0b7d4</data_source_profile_id>
-			<t_rrd_step></t_rrd_step>
-			<rrd_step>300</rrd_step>
-			<t_active></t_active>
-			<active>on</active>
-		</ds>
-		<items>
-			<hash_0801029825aaf7c0bdf1554c5b4b86680ac2c0>
-				<t_data_source_name></t_data_source_name>
-				<data_source_name>cpu</data_source_name>
-				<t_rrd_minimum></t_rrd_minimum>
-				<rrd_minimum>0</rrd_minimum>
-				<t_rrd_maximum></t_rrd_maximum>
-				<rrd_maximum>U</rrd_maximum>
-				<t_data_source_type_id></t_data_source_type_id>
-				<data_source_type_id>1</data_source_type_id>
-				<t_rrd_heartbeat></t_rrd_heartbeat>
-				<rrd_heartbeat>600</rrd_heartbeat>
-				<t_data_input_field_id></t_data_input_field_id>
-				<data_input_field_id>0</data_input_field_id>
-			</hash_0801029825aaf7c0bdf1554c5b4b86680ac2c0>
-		</items>
-		<data>
-			<item_000>
-				<data_input_field_id>hash_070102172b4b0eacee4948c6479f587b62e512</data_input_field_id>
-				<t_value>on</t_value>
-				<value></value>
-			</item_000>
-			<item_001>
-				<data_input_field_id>hash_07010230fb5d5bcf3d66bb5abe88596f357c26</data_input_field_id>
-				<t_value>on</t_value>
-				<value></value>
-			</item_001>
-			<item_002>
-				<data_input_field_id>hash_07010231112c85ae4ff821d3b288336288818c</data_input_field_id>
-				<t_value>on</t_value>
-				<value></value>
-			</item_002>
-		</data>
-	</hash_010102f6e7d21c19434666bbdac00ccef9932f>
+	</hash_010102fbbf287d183856a24d1aa3976f9461cf>
+	<hash_030102e4a60e4b8da9689294450dd161580dbd>
+		<name>Device - Polling Time</name>
+		<type_id>5</type_id>
+		<input_string>PHBhdGhfY2FjdGk+L3NjcmlwdHMvc3NfaHN0YXRzLnBocCBzc19oc3RhdHMgPGhvc3RfaWQ+IHBvbGxpbmdfdGltZQ==</input_string>
+		<fields>
+			<hash_07010208f589472a63becab00f661c311985e8>
+				<name>The hosts unique id</name>
+				<update_rra></update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls></allow_nulls>
+				<type_code>host_id</type_code>
+				<input_output>in</input_output>
+				<data_name>host_id</data_name>
+			</hash_07010208f589472a63becab00f661c311985e8>
+			<hash_0701022187e7ac3bfefe37c8227e87bbf81d90>
+				<name>Polling Time in Milliseconds</name>
+				<update_rra>on</update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls></allow_nulls>
+				<type_code></type_code>
+				<input_output>out</input_output>
+				<data_name>polling_time</data_name>
+			</hash_0701022187e7ac3bfefe37c8227e87bbf81d90>
+		</fields>
+	</hash_030102e4a60e4b8da9689294450dd161580dbd>
+	<hash_030102bb8130b897891fbcb8d77fb74cbc1d67>
+		<name>Device - Uptime</name>
+		<type_id>5</type_id>
+		<input_string>PHBhdGhfY2FjdGk+L3NjcmlwdHMvc3NfaHN0YXRzLnBocCBzc19oc3RhdHMgPGhvc3RfaWQ+IHVwdGltZQ==</input_string>
+		<fields>
+			<hash_070102746674cef4830927324742cbac124a19>
+				<name>The hosts unique id</name>
+				<update_rra></update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls></allow_nulls>
+				<type_code>host_id</type_code>
+				<input_output>in</input_output>
+				<data_name>host_id</data_name>
+			</hash_070102746674cef4830927324742cbac124a19>
+			<hash_070102cdd10c4aa321bb14ba8b0a5f6e62d06a>
+				<name>Polling Time in Milliseconds</name>
+				<update_rra>on</update_rra>
+				<regexp_match></regexp_match>
+				<allow_nulls></allow_nulls>
+				<type_code></type_code>
+				<input_output>out</input_output>
+				<data_name>uptime</data_name>
+			</hash_070102cdd10c4aa321bb14ba8b0a5f6e62d06a>
+		</fields>
+	</hash_030102bb8130b897891fbcb8d77fb74cbc1d67>
 	<hash_0301024427395a6ecd5bc2af34a3488ee0221b>
 		<name>PING - Advanced Ping</name>
 		<type_id>5</type_id>
@@ -3737,184 +2653,6 @@
 			</hash_0701025f70f2d03d21300f664bfa84170f6641>
 		</fields>
 	</hash_0301024427395a6ecd5bc2af34a3488ee0221b>
-	<hash_0301028e556220d403fc98b23e690088f96474>
-		<name>DI - Linux Memory Usage</name>
-		<type_id>5</type_id>
-		<input_string>PHBhdGhfY2FjdGk+L3NjcmlwdHMvc3NfbmV0c25tcF9tZW1vcnkucGhwIHNzX25ldHNubXBfbWVtb3J5IDxob3N0bmFtZT4gPHNubXBfdmVyPiA8c25tcF9jb21tdW5pdHk+IDxzbm1wX3BvcnQ+IDxzbm1wX3RpbWVvdXQ+IDxzbm1wM191c2VybmFtZT4gPHNubXAzX3Bhc3N3b3JkPiA8c25tcDNfYXV0aHByb3Q+IDxzbm1wM19wcml2cGFzcz4gPHNubXAzX3ByaXZwcm90PiA8c25tcDNfY29udGV4dD4=</input_string>
-		<fields>
-			<hash_0701024d495e10d1c702485c4753bdc41910d6>
-				<name>SNMP port number</name>
-				<update_rra></update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code>snmp_port</type_code>
-				<input_output>in</input_output>
-				<data_name>snmp_port</data_name>
-			</hash_0701024d495e10d1c702485c4753bdc41910d6>
-			<hash_0701024c04a173fca89d42f85ef40a68d3af37>
-				<name>Timeout for SNMP queries</name>
-				<update_rra></update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code>snmp_timeout</type_code>
-				<input_output>in</input_output>
-				<data_name>snmp_timeout</data_name>
-			</hash_0701024c04a173fca89d42f85ef40a68d3af37>
-			<hash_0701026d4cbe6e6cd5e5ce6c534356559a9536>
-				<name>SNMPv3 user password</name>
-				<update_rra></update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code>snmp_password</type_code>
-				<input_output>in</input_output>
-				<data_name>snmp3_password</data_name>
-			</hash_0701026d4cbe6e6cd5e5ce6c534356559a9536>
-			<hash_070102787d10e5e6346e77d8ecfd95551f60b7>
-				<name>Memory allocated to processes</name>
-				<update_rra>on</update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code></type_code>
-				<input_output>out</input_output>
-				<data_name>usedReal</data_name>
-			</hash_070102787d10e5e6346e77d8ecfd95551f60b7>
-			<hash_070102e3265a4de7e403ecb80cc36e0875aa67>
-				<name>SNMPv3 username</name>
-				<update_rra></update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls>on</allow_nulls>
-				<type_code>snmp_username</type_code>
-				<input_output>in</input_output>
-				<data_name>snmp3_username</data_name>
-			</hash_070102e3265a4de7e403ecb80cc36e0875aa67>
-			<hash_070102c5fed724e9aba2b0467c36d053b748fa>
-				<name>Swap memory allocated</name>
-				<update_rra>on</update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code></type_code>
-				<input_output>out</input_output>
-				<data_name>usedSwap</data_name>
-			</hash_070102c5fed724e9aba2b0467c36d053b748fa>
-			<hash_07010267d9e6b66844aa5d966a5fa798817456>
-				<name>SNMP community</name>
-				<update_rra></update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code>snmp_community</type_code>
-				<input_output>in</input_output>
-				<data_name>snmp_community</data_name>
-			</hash_07010267d9e6b66844aa5d966a5fa798817456>
-			<hash_0701026239cfa08a3fbaf0085780fc90efb1eb>
-				<name>Target hostname/IP address</name>
-				<update_rra></update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code>hostname</type_code>
-				<input_output>in</input_output>
-				<data_name>hostname</data_name>
-			</hash_0701026239cfa08a3fbaf0085780fc90efb1eb>
-			<hash_07010245d116204cdaa69672da40681d73175d>
-				<name>Total physical memory installed</name>
-				<update_rra>on</update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code></type_code>
-				<input_output>out</input_output>
-				<data_name>totalReal</data_name>
-			</hash_07010245d116204cdaa69672da40681d73175d>
-			<hash_07010247d9bb7e51bfde0d28835501dbd35381>
-				<name>SNMP version</name>
-				<update_rra></update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code>snmp_version</type_code>
-				<input_output>in</input_output>
-				<data_name>snmp_ver</data_name>
-			</hash_07010247d9bb7e51bfde0d28835501dbd35381>
-			<hash_0701025aca8602e80d9061f0bc3253ccea760d>
-				<name>Unallocated physical memory</name>
-				<update_rra>on</update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code></type_code>
-				<input_output>out</input_output>
-				<data_name>availReal</data_name>
-			</hash_0701025aca8602e80d9061f0bc3253ccea760d>
-			<hash_070102bb667f71df75ca81072155693a7456a8>
-				<name>Memory allocated to buffers</name>
-				<update_rra>on</update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code></type_code>
-				<input_output>out</input_output>
-				<data_name>memBuffer</data_name>
-			</hash_070102bb667f71df75ca81072155693a7456a8>
-			<hash_0701025618afca552b03cc8c893bf347b81b82>
-				<name>Memory allocated to cache</name>
-				<update_rra>on</update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code></type_code>
-				<input_output>out</input_output>
-				<data_name>memCached</data_name>
-			</hash_0701025618afca552b03cc8c893bf347b81b82>
-			<hash_070102df81713f892f4e969b77dd6d948a79c4>
-				<name>Total swap memory installed</name>
-				<update_rra>on</update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code></type_code>
-				<input_output>out</input_output>
-				<data_name>totalSwap</data_name>
-			</hash_070102df81713f892f4e969b77dd6d948a79c4>
-			<hash_07010270d411e4f07f74fa5cf1ef4d4c29bf9c>
-				<name>Unallocated swap memory</name>
-				<update_rra>on</update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code></type_code>
-				<input_output>out</input_output>
-				<data_name>availSwap</data_name>
-			</hash_07010270d411e4f07f74fa5cf1ef4d4c29bf9c>
-			<hash_0701023d0bf842d3270f6654635d0c8923326b>
-				<name>SNMPv3 authentication protocol</name>
-				<update_rra></update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code>snmp_auth_protocol</type_code>
-				<input_output>in</input_output>
-				<data_name>snmp3_authprot</data_name>
-			</hash_0701023d0bf842d3270f6654635d0c8923326b>
-			<hash_070102e8e8364aa007bc128f9dc6573edb80f2>
-				<name>SNMPv3 privilege passphrase</name>
-				<update_rra></update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code>snmp_priv_passphrase</type_code>
-				<input_output>in</input_output>
-				<data_name>snmp3_privpass</data_name>
-			</hash_070102e8e8364aa007bc128f9dc6573edb80f2>
-			<hash_070102efb315ca833edf089a77eee2b43c61b6>
-				<name>SNMPv3 privilege protocol</name>
-				<update_rra></update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code>snmp_priv_protocol</type_code>
-				<input_output>in</input_output>
-				<data_name>snmp3_privprot</data_name>
-			</hash_070102efb315ca833edf089a77eee2b43c61b6>
-			<hash_070102eb8b1cb39b9c284ed08d77db79ae98f7>
-				<name>SNMPv3 authentiation context</name>
-				<update_rra></update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code>snmp_context</type_code>
-				<input_output>in</input_output>
-				<data_name>snmp3_context</data_name>
-			</hash_070102eb8b1cb39b9c284ed08d77db79ae98f7>
-		</fields>
-	</hash_0301028e556220d403fc98b23e690088f96474>
 	<hash_030102bf566c869ac6443b0c75d1c32b5a350e>
 		<name>Get SNMP Data (Indexed)</name>
 		<type_id>3</type_id>
@@ -3978,7 +2716,7 @@
 				<name>Index Value</name>
 				<update_rra></update_rra>
 				<regexp_match></regexp_match>
-				<allow_nulls>on</allow_nulls>
+				<allow_nulls></allow_nulls>
 				<type_code>index_value</type_code>
 				<input_output>in</input_output>
 				<data_name>index_value</data_name>
@@ -4030,83 +2768,56 @@
 			</hash_0701023a33d4fc65b8329ab2ac46a36da26b72>
 		</fields>
 	</hash_030102bf566c869ac6443b0c75d1c32b5a350e>
-	<hash_030102332111d8b54ac8ce939af87a7eac0c06>
-		<name>Get Script Server Data (Indexed)</name>
-		<type_id>6</type_id>
-		<input_string></input_string>
-		<fields>
-			<hash_070102172b4b0eacee4948c6479f587b62e512>
-				<name>Index Type</name>
-				<update_rra></update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code>index_type</type_code>
-				<input_output>in</input_output>
-				<data_name>index_type</data_name>
-			</hash_070102172b4b0eacee4948c6479f587b62e512>
-			<hash_07010230fb5d5bcf3d66bb5abe88596f357c26>
-				<name>Index Value</name>
-				<update_rra></update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code>index_value</type_code>
-				<input_output>in</input_output>
-				<data_name>index_value</data_name>
-			</hash_07010230fb5d5bcf3d66bb5abe88596f357c26>
-			<hash_07010231112c85ae4ff821d3b288336288818c>
-				<name>Output Type ID</name>
-				<update_rra></update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code>output_type</type_code>
-				<input_output>in</input_output>
-				<data_name>output_type</data_name>
-			</hash_07010231112c85ae4ff821d3b288336288818c>
-			<hash_0701025be8fa85472d89c621790b43510b5043>
-				<name>Output Value</name>
-				<update_rra>on</update_rra>
-				<regexp_match></regexp_match>
-				<allow_nulls></allow_nulls>
-				<type_code></type_code>
-				<input_output>out</input_output>
-				<data_name>output</data_name>
-			</hash_0701025be8fa85472d89c621790b43510b5043>
-		</fields>
-	</hash_030102332111d8b54ac8ce939af87a7eac0c06>
-	<hash_20010272ebeba35b3a812a9ab9719cbcb0b7d4>
-		<name>1.5Years</name>
-		<step>300</step>
-		<heartbeat>600</heartbeat>
+	<hash_2001023e0761d884720dc638e4e9da8050b323>
+		<name>High Resolution</name>
+		<step>30</step>
+		<heartbeat>300</heartbeat>
 		<x_files_factor>0.5</x_files_factor>
 		<default>on</default>
-		<cf_items>1|2|3|4</cf_items>
+		<cf_items>1</cf_items>
 		<items>
 			<item_000>
-				<name>Daily</name>
+				<name>30sec</name>
 				<steps>1</steps>
-				<rows>157680</rows>
-				<timespan>86400</timespan>
+				<rows>120960</rows>
+				<timespan>3600</timespan>
 			</item_000>
 			<item_001>
-				<name>Weekly</name>
-				<steps>6</steps>
-				<rows>26280</rows>
-				<timespan>604800</timespan>
+				<name>1day</name>
+				<steps>10</steps>
+				<rows>157680</rows>
+				<timespan>86400</timespan>
 			</item_001>
-			<item_002>
-				<name>Monthly</name>
-				<steps>24</steps>
-				<rows>6570</rows>
-				<timespan>2618784</timespan>
-			</item_002>
-			<item_003>
-				<name>Yearly</name>
-				<steps>288</steps>
-				<rows>547</rows>
-				<timespan>31536000</timespan>
-			</item_003>
 		</items>
-	</hash_20010272ebeba35b3a812a9ab9719cbcb0b7d4>
+	</hash_2001023e0761d884720dc638e4e9da8050b323>
+	<hash_060102e9c43831e54eca8069317a2ce8c6f751>
+		<name>Normal</name>
+		<gprint_text>%8.2lf %s</gprint_text>
+	</hash_060102e9c43831e54eca8069317a2ce8c6f751>
+	<hash_060102fc9f65c03c3566d93c3a28e1cb5aac93>
+		<name>Percentage as Decimal</name>
+		<gprint_text>%6.2lf%%</gprint_text>
+	</hash_060102fc9f65c03c3566d93c3a28e1cb5aac93>
+	<hash_050102e467c2a53cd92031c422b0703329b59a>
+		<name>Turn Uptime to Days</name>
+		<items>
+			<hash_140102c658f6a764966a4bcfbb4b0ef3deba37>
+				<sequence>1</sequence>
+				<type>4</type>
+				<value>CURRENT_DATA_SOURCE</value>
+			</hash_140102c658f6a764966a4bcfbb4b0ef3deba37>
+			<hash_140102f540004e39b64358d09d333535f2f497>
+				<sequence>2</sequence>
+				<type>6</type>
+				<value>8640000</value>
+			</hash_140102f540004e39b64358d09d333535f2f497>
+			<hash_140102a413e8cd783534eb54756ecec2029338>
+				<sequence>3</sequence>
+				<type>2</type>
+				<value>4</value>
+			</hash_140102a413e8cd783534eb54756ecec2029338>
+		</items>
+	</hash_050102e467c2a53cd92031c422b0703329b59a>
 	<hash_05010240ce49e270ccd824128c2084ae7f54dc>
 		<name>Divide by 1000</name>
 		<items>
@@ -4337,26 +3048,6 @@
 			</hash_140102de76df761f7e4451efa3f4fd84fc4e9a>
 		</items>
 	</hash_0501022b9982d27bbf9d670db6926329bb87c6>
-	<hash_050102634a23af5e78af0964e8d33b1a4ed26b>
-		<name>Multiply by 1024</name>
-		<items>
-			<hash_14010286370cfa0008fe8c56b28be80ee39a40>
-				<sequence>1</sequence>
-				<type>4</type>
-				<value>CURRENT_DATA_SOURCE</value>
-			</hash_14010286370cfa0008fe8c56b28be80ee39a40>
-			<hash_1401029a35cc60d47691af37f6fddf02064e20>
-				<sequence>2</sequence>
-				<type>6</type>
-				<value>1024</value>
-			</hash_1401029a35cc60d47691af37f6fddf02064e20>
-			<hash_1401025d7a7941ec0440b257e5598a27dd1688>
-				<sequence>3</sequence>
-				<type>2</type>
-				<value>3</value>
-			</hash_1401025d7a7941ec0440b257e5598a27dd1688>
-		</items>
-	</hash_050102634a23af5e78af0964e8d33b1a4ed26b>
 	<hash_05010273f95f8b77b5508157d64047342c421e>
 		<name>Turn Bytes into Bits</name>
 		<items>
@@ -4377,72 +3068,6 @@
 			</hash_140102caa4e023ac2d7b1c4b4c8c4adfd55dfe>
 		</items>
 	</hash_05010273f95f8b77b5508157d64047342c421e>
-	<hash_0501020018d26bba5c3d108d4f9056bd9ec6b6>
-		<name>DiskPercent</name>
-		<items>
-			<hash_1401025018b2eea194f5397e5b5c725651f9e7>
-				<sequence>1</sequence>
-				<type>4</type>
-				<value>CURRENT_DATA_SOURCE</value>
-			</hash_1401025018b2eea194f5397e5b5c725651f9e7>
-			<hash_140102ff2094457faa4e46fb6d149229fdb286>
-				<sequence>2</sequence>
-				<type>6</type>
-				<value>b</value>
-			</hash_140102ff2094457faa4e46fb6d149229fdb286>
-			<hash_1401020e4cd7ed2e3ac71ec7c6003d0880b739>
-				<sequence>5</sequence>
-				<type>2</type>
-				<value>4</value>
-			</hash_1401020e4cd7ed2e3ac71ec7c6003d0880b739>
-			<hash_14010268f8953a0f3593d6c895b5a4a88c2151>
-				<sequence>6</sequence>
-				<type>6</type>
-				<value>100</value>
-			</hash_14010268f8953a0f3593d6c895b5a4a88c2151>
-			<hash_14010258fb335ade567de9746f691c060aefd1>
-				<sequence>7</sequence>
-				<type>2</type>
-				<value>3</value>
-			</hash_14010258fb335ade567de9746f691c060aefd1>
-		</items>
-	</hash_0501020018d26bba5c3d108d4f9056bd9ec6b6>
-	<hash_05010230f2ff31b6944a59edf5a6966e667801>
-		<name>b minus a</name>
-		<items>
-			<hash_140102edfd8064c983fa406a761546308a1efa>
-				<sequence>2</sequence>
-				<type>6</type>
-				<value>b</value>
-			</hash_140102edfd8064c983fa406a761546308a1efa>
-			<hash_14010255df9d7769f3d4fff9580748032b925d>
-				<sequence>3</sequence>
-				<type>6</type>
-				<value>a</value>
-			</hash_14010255df9d7769f3d4fff9580748032b925d>
-			<hash_1401026961de72b500b63c23862c89787b8f37>
-				<sequence>4</sequence>
-				<type>2</type>
-				<value>2</value>
-			</hash_1401026961de72b500b63c23862c89787b8f37>
-		</items>
-	</hash_05010230f2ff31b6944a59edf5a6966e667801>
-	<hash_060102e9c43831e54eca8069317a2ce8c6f751>
-		<name>Normal</name>
-		<gprint_text>%8.2lf %s</gprint_text>
-	</hash_060102e9c43831e54eca8069317a2ce8c6f751>
-	<hash_060102fc9f65c03c3566d93c3a28e1cb5aac93>
-		<name>Percentage as Decimal</name>
-		<gprint_text>%6.2lf%%</gprint_text>
-	</hash_060102fc9f65c03c3566d93c3a28e1cb5aac93>
-	<hash_0601024e72328b57f5f2bb08a83a477b6cd10c>
-		<name>Percent</name>
-		<gprint_text>%8.1lf %%</gprint_text>
-	</hash_0601024e72328b57f5f2bb08a83a477b6cd10c>
-	<hash_06010219414480d6897c8731c7dc6c5310653e>
-		<name>Exact Numbers</name>
-		<gprint_text>%8.0lf</gprint_text>
-	</hash_06010219414480d6897c8731c7dc6c5310653e>
 	<hash_040102c9425bca7d4b84c3a4e5565576984ea2>
 		<name>DQ - SNMP - Interface simple</name>
 		<description>Queries a host for a list of monitorable interfaces</description>
@@ -4451,17 +3076,17 @@
 		<graphs>
 			<hash_110102dffc4015294223f79f0d64c8615ebf38>
 				<graph_template_id>hash_000102df9f91bd5dd41401ea9ea6351210bc29</graph_template_id>
-				<name>GTass - Interface - Traffic (bps)</name>
+				<name>GTass - Interface - Traffic bps 64bit</name>
 				<rrd>
 					<item_000>
 						<snmp_field_name>ifHCInOctets</snmp_field_name>
-						<data_template_id>hash_0101026632e1e0b58a565c135d7ff90440c335</data_template_id>
-						<data_template_rrd_id>hash_0801022df25c57022b0c7e7d0be4c035ada1a0</data_template_rrd_id>
+						<data_template_id>hash_010102fbbf287d183856a24d1aa3976f9461cf</data_template_id>
+						<data_template_rrd_id>hash_0801022027e9d39f1ce227a90ecc275b120326</data_template_rrd_id>
 					</item_000>
 					<item_001>
 						<snmp_field_name>ifHCOutOctets</snmp_field_name>
-						<data_template_id>hash_0101026632e1e0b58a565c135d7ff90440c335</data_template_id>
-						<data_template_rrd_id>hash_080102721c0794526d1ac1c359f27dc56faa49</data_template_rrd_id>
+						<data_template_id>hash_010102fbbf287d183856a24d1aa3976f9461cf</data_template_id>
+						<data_template_rrd_id>hash_080102465854e82ea0fff5bcb75f76cb4dd60a</data_template_rrd_id>
 					</item_001>
 				</rrd>
 				<sv_graph>
@@ -4477,12 +3102,30 @@
 					</hash_1201028a66c0942697ea0839f7b2b376469c3e>
 				</sv_graph>
 				<sv_data_source>
+					<hash_13010253c1e11218f8874b688235eb877d0c37>
+						<field_name>name</field_name>
+						<data_template_id>hash_010102fbbf287d183856a24d1aa3976f9461cf</data_template_id>
+						<sequence>1</sequence>
+						<text>|host_description| - Traffic - |query_ifName|</text>
+					</hash_13010253c1e11218f8874b688235eb877d0c37>
+					<hash_130102e2b421e46ced55557e47feb3e792ac6a>
+						<field_name>name</field_name>
+						<data_template_id>hash_010102fbbf287d183856a24d1aa3976f9461cf</data_template_id>
+						<sequence>2</sequence>
+						<text>|host_description| - Traffic - |query_ifDescr|</text>
+					</hash_130102e2b421e46ced55557e47feb3e792ac6a>
 					<hash_13010230f33508e6de3d0009cfc49060ebad3c>
 						<field_name>name</field_name>
 						<data_template_id>hash_0101026632e1e0b58a565c135d7ff90440c335</data_template_id>
 						<sequence>3</sequence>
 						<text>|host_description| - Traffic - |query_ifName|</text>
 					</hash_13010230f33508e6de3d0009cfc49060ebad3c>
+					<hash_130102ea24f880eacc892d71ab3dbbc6aac1bd>
+						<field_name>name</field_name>
+						<data_template_id>hash_010102fbbf287d183856a24d1aa3976f9461cf</data_template_id>
+						<sequence>4</sequence>
+						<text>|host_description| - Traffic - |query_ifAlias|</text>
+					</hash_130102ea24f880eacc892d71ab3dbbc6aac1bd>
 					<hash_130102ffd72a948c5e45a5b8160cf869ff0aee>
 						<field_name>name</field_name>
 						<data_template_id>hash_0101026632e1e0b58a565c135d7ff90440c335</data_template_id>
@@ -4555,73 +3198,72 @@
 					</hash_130102b5347ed84a0708487990483c350a3616>
 				</sv_data_source>
 			</hash_110102ee7f2b2eca6191730fcbb2320d70daa0>
-		</graphs>
-	</hash_040102c9425bca7d4b84c3a4e5565576984ea2>
-	<hash_0401029343eab1f4d88b0e61ffc9d020f35414>
-		<name>DQ - SNMP - Get Mounted Partitions</name>
-		<description>Gets a list of partitions using SNMP</description>
-		<xml_path>&lt;path_cacti&gt;/resource/script_server/host_disk.xml</xml_path>
-		<data_input_id>hash_030102332111d8b54ac8ce939af87a7eac0c06</data_input_id>
-		<graphs>
-			<hash_11010207b4bef3446a3542e011ccdfd053160e>
-				<graph_template_id>hash_00010248d8631be3bd9c586bf23cc094a24a31</graph_template_id>
-				<name>GTass - Disk/Memory Usage Bytes</name>
+			<hash_11010215c867c4010e4245fd1199385ba22320>
+				<graph_template_id>hash_000102df9f91bd5dd41401ea9ea6351210bc29</graph_template_id>
+				<name>GTass - Interface - Traffic bps 32bit</name>
 				<rrd>
 					<item_000>
-						<snmp_field_name>hrStorageUsed</snmp_field_name>
-						<data_template_id>hash_010102d814fa3b79bd0f8933b6e0834d3f16d0</data_template_id>
-						<data_template_rrd_id>hash_0801020ee6bb54957f6795a5369a29f818d860</data_template_rrd_id>
+						<snmp_field_name>ifInOctets</snmp_field_name>
+						<data_template_id>hash_010102fbbf287d183856a24d1aa3976f9461cf</data_template_id>
+						<data_template_rrd_id>hash_0801022027e9d39f1ce227a90ecc275b120326</data_template_rrd_id>
 					</item_000>
 					<item_001>
-						<snmp_field_name>hrStorageSize</snmp_field_name>
-						<data_template_id>hash_010102d814fa3b79bd0f8933b6e0834d3f16d0</data_template_id>
-						<data_template_rrd_id>hash_080102165a0da5f461561c85d092dfe96b9551</data_template_rrd_id>
+						<snmp_field_name>ifOutOctets</snmp_field_name>
+						<data_template_id>hash_010102fbbf287d183856a24d1aa3976f9461cf</data_template_id>
+						<data_template_rrd_id>hash_080102465854e82ea0fff5bcb75f76cb4dd60a</data_template_rrd_id>
 					</item_001>
 				</rrd>
 				<sv_graph>
-					<hash_120102a1903cacb80a64a2fff37cf725a9698d>
+					<hash_120102f2f5e9216736ace47d1e6fabefb0557d>
 						<field_name>title</field_name>
 						<sequence>1</sequence>
-						<text>|host_description| - Bytes - |query_hrStorageDescr|</text>
-					</hash_120102a1903cacb80a64a2fff37cf725a9698d>
-				</sv_graph>
-				<sv_data_source>
-				</sv_data_source>
-			</hash_11010207b4bef3446a3542e011ccdfd053160e>
-		</graphs>
-	</hash_0401029343eab1f4d88b0e61ffc9d020f35414>
-	<hash_0401020d1ab53fe37487a5d0b9e1d3ee8c1d0d>
-		<name>DQ - SNMP - Get Processor Information</name>
-		<description>Gets usage for each processor in the system using the host MIB.</description>
-		<xml_path>&lt;path_cacti&gt;/resource/script_server/host_cpu.xml</xml_path>
-		<data_input_id>hash_030102332111d8b54ac8ce939af87a7eac0c06</data_input_id>
-		<graphs>
-			<hash_1101024a515b61441ea5f27ab7dee6c3cb7818>
-				<graph_template_id>hash_000102c6bb62bedec4ab97f9db9fd780bd85a6</graph_template_id>
-				<name>GTass - CPU Usage Windows/Linux</name>
-				<rrd>
-					<item_000>
-						<snmp_field_name>hrProcessorLoad</snmp_field_name>
-						<data_template_id>hash_010102f6e7d21c19434666bbdac00ccef9932f</data_template_id>
-						<data_template_rrd_id>hash_0801029825aaf7c0bdf1554c5b4b86680ac2c0</data_template_rrd_id>
-					</item_000>
-				</rrd>
-				<sv_graph>
-					<hash_120102fa2f07ab54fce72eea684ba893dd9c95>
+						<text>|host_description| - Traffic - |query_ifName| - |query_ifAlias|</text>
+					</hash_120102f2f5e9216736ace47d1e6fabefb0557d>
+					<hash_120102474c925fa1e0d175d3706fd6c6b03b52>
 						<field_name>title</field_name>
-						<sequence>1</sequence>
-						<text>|host_description| - CPU Utilization - CPU|query_hrProcessorFrwID|</text>
-					</hash_120102fa2f07ab54fce72eea684ba893dd9c95>
+						<sequence>2</sequence>
+						<text>|host_description| - Traffic - |query_ifName|</text>
+					</hash_120102474c925fa1e0d175d3706fd6c6b03b52>
 				</sv_graph>
 				<sv_data_source>
-					<hash_130102b5a724edc36c10891fa2a5c370d55b6f>
+					<hash_130102a989e1fc06d91eba7868e45e1e954f4c>
 						<field_name>name</field_name>
-						<data_template_id>hash_010102f6e7d21c19434666bbdac00ccef9932f</data_template_id>
+						<data_template_id>hash_0101026632e1e0b58a565c135d7ff90440c335</data_template_id>
 						<sequence>1</sequence>
-						<text>|host_description| - CPU Utilization - CPU|query_hrProcessorFrwID|</text>
-					</hash_130102b5a724edc36c10891fa2a5c370d55b6f>
+						<text>|host_description| - Traffic - |query_ifName|</text>
+					</hash_130102a989e1fc06d91eba7868e45e1e954f4c>
+					<hash_1301020be0a6cecbe3f216ba637b68d711ef02>
+						<field_name>name</field_name>
+						<data_template_id>hash_010102fbbf287d183856a24d1aa3976f9461cf</data_template_id>
+						<sequence>2</sequence>
+						<text>|host_description| - Traffic - |query_ifName|</text>
+					</hash_1301020be0a6cecbe3f216ba637b68d711ef02>
+					<hash_130102b1502a486fafdba94c45a9847e17a592>
+						<field_name>name</field_name>
+						<data_template_id>hash_0101026632e1e0b58a565c135d7ff90440c335</data_template_id>
+						<sequence>3</sequence>
+						<text>|host_description| - Traffic - |query_ifDescr|</text>
+					</hash_130102b1502a486fafdba94c45a9847e17a592>
+					<hash_130102a72c90e8ed723c070b842eb9c6a0721f>
+						<field_name>name</field_name>
+						<data_template_id>hash_010102fbbf287d183856a24d1aa3976f9461cf</data_template_id>
+						<sequence>4</sequence>
+						<text>|host_description| - Traffic - |query_ifDescr|</text>
+					</hash_130102a72c90e8ed723c070b842eb9c6a0721f>
+					<hash_1301025258db448d48ed0f8d67e193ebfbe8a8>
+						<field_name>name</field_name>
+						<data_template_id>hash_0101026632e1e0b58a565c135d7ff90440c335</data_template_id>
+						<sequence>5</sequence>
+						<text>|host_description| - Traffic - |query_ifAlias|</text>
+					</hash_1301025258db448d48ed0f8d67e193ebfbe8a8>
+					<hash_1301028f141a9e762ffdf82ae91c2df406349a>
+						<field_name>name</field_name>
+						<data_template_id>hash_010102fbbf287d183856a24d1aa3976f9461cf</data_template_id>
+						<sequence>6</sequence>
+						<text>|host_description| - Traffic - |query_ifAlias|</text>
+					</hash_1301028f141a9e762ffdf82ae91c2df406349a>
 				</sv_data_source>
-			</hash_1101024a515b61441ea5f27ab7dee6c3cb7818>
+			</hash_11010215c867c4010e4245fd1199385ba22320>
 		</graphs>
-	</hash_0401020d1ab53fe37487a5d0b9e1d3ee8c1d0d>
+	</hash_040102c9425bca7d4b84c3a4e5565576984ea2>
 </cacti>
