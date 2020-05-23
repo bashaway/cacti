@@ -1307,9 +1307,9 @@
 			<data_source_path></data_source_path>
 			<data_input_id>hash_030102e4a60e4b8da9689294450dd161580dbd</data_input_id>
 			<t_data_source_profile_id></t_data_source_profile_id>
-			<data_source_profile_id>hash_2001023e0761d884720dc638e4e9da8050b323</data_source_profile_id>
+			<data_source_profile_id>hash_200102d62c52891f4f9688729a5bc9fad91b18</data_source_profile_id>
 			<t_rrd_step></t_rrd_step>
-			<rrd_step>30</rrd_step>
+			<rrd_step>300</rrd_step>
 			<t_active></t_active>
 			<active>on</active>
 		</ds>
@@ -1344,9 +1344,9 @@
 			<data_source_path></data_source_path>
 			<data_input_id>hash_0301024427395a6ecd5bc2af34a3488ee0221b</data_input_id>
 			<t_data_source_profile_id></t_data_source_profile_id>
-			<data_source_profile_id>hash_2001023e0761d884720dc638e4e9da8050b323</data_source_profile_id>
+			<data_source_profile_id>hash_200102d62c52891f4f9688729a5bc9fad91b18</data_source_profile_id>
 			<t_rrd_step></t_rrd_step>
-			<rrd_step>30</rrd_step>
+			<rrd_step>300</rrd_step>
 			<t_active></t_active>
 			<active>on</active>
 		</ds>
@@ -1424,25 +1424,40 @@
 		</items>
 		<data>
 			<item_000>
-				<data_input_field_id>hash_07010296d16f176556dfeb5620d64cf916b88a</data_input_field_id>
+				<data_input_field_id>hash_07010292f5906c8dc0f964b41f4253df582c38</data_input_field_id>
 				<t_value></t_value>
 				<value></value>
 			</item_000>
 			<item_001>
-				<data_input_field_id>hash_0701024042c506e261778066cbda27c21c9176</data_input_field_id>
+				<data_input_field_id>hash_07010232285d5bf16e56c478f5e83f32cda9ef</data_input_field_id>
 				<t_value></t_value>
-				<value>10</value>
+				<value></value>
 			</item_001>
 			<item_002>
-				<data_input_field_id>hash_0701021130c26c560d48191e3b1da07e26cfef</data_input_field_id>
+				<data_input_field_id>hash_070102ad14ac90641aed388139f6ba86a2e48b</data_input_field_id>
 				<t_value></t_value>
-				<value>ICMP</value>
+				<value></value>
 			</item_002>
 			<item_003>
-				<data_input_field_id>hash_0701025f70f2d03d21300f664bfa84170f6641</data_input_field_id>
+				<data_input_field_id>hash_07010296d16f176556dfeb5620d64cf916b88a</data_input_field_id>
 				<t_value></t_value>
 				<value></value>
 			</item_003>
+			<item_004>
+				<data_input_field_id>hash_0701024042c506e261778066cbda27c21c9176</data_input_field_id>
+				<t_value></t_value>
+				<value>10</value>
+			</item_004>
+			<item_005>
+				<data_input_field_id>hash_0701021130c26c560d48191e3b1da07e26cfef</data_input_field_id>
+				<t_value></t_value>
+				<value>ICMP</value>
+			</item_005>
+			<item_006>
+				<data_input_field_id>hash_0701025f70f2d03d21300f664bfa84170f6641</data_input_field_id>
+				<t_value></t_value>
+				<value></value>
+			</item_006>
 		</data>
 	</hash_01010204ef4da0d125620474bcbb3a72c7356c>
 	<hash_030102e4a60e4b8da9689294450dd161580dbd>
@@ -1558,28 +1573,40 @@
 			</hash_0701025f70f2d03d21300f664bfa84170f6641>
 		</fields>
 	</hash_0301024427395a6ecd5bc2af34a3488ee0221b>
-	<hash_2001023e0761d884720dc638e4e9da8050b323>
-		<name>High Resolution</name>
-		<step>30</step>
-		<heartbeat>300</heartbeat>
+	<hash_200102d62c52891f4f9688729a5bc9fad91b18>
+		<name>5 Minute Collection</name>
+		<step>300</step>
+		<heartbeat>600</heartbeat>
 		<x_files_factor>0.5</x_files_factor>
 		<default>on</default>
-		<cf_items>1</cf_items>
+		<cf_items>1|2|3|4</cf_items>
 		<items>
 			<item_000>
-				<name>30sec</name>
+				<name>Daily (5 Minute Average)</name>
 				<steps>1</steps>
-				<rows>120960</rows>
-				<timespan>3600</timespan>
+				<rows>600</rows>
+				<timespan>86400</timespan>
 			</item_000>
 			<item_001>
-				<name>1day</name>
-				<steps>10</steps>
-				<rows>157680</rows>
-				<timespan>86400</timespan>
+				<name>Weekly (30 Minute Average)</name>
+				<steps>6</steps>
+				<rows>700</rows>
+				<timespan>604800</timespan>
 			</item_001>
+			<item_002>
+				<name>Monthly (2 Hour Average)</name>
+				<steps>24</steps>
+				<rows>775</rows>
+				<timespan>2618784</timespan>
+			</item_002>
+			<item_003>
+				<name>Yearly (1 Day Average)</name>
+				<steps>288</steps>
+				<rows>797</rows>
+				<timespan>31536000</timespan>
+			</item_003>
 		</items>
-	</hash_2001023e0761d884720dc638e4e9da8050b323>
+	</hash_200102d62c52891f4f9688729a5bc9fad91b18>
 	<hash_060102e9c43831e54eca8069317a2ce8c6f751>
 		<name>Normal</name>
 		<gprint_text>%8.2lf %s</gprint_text>
