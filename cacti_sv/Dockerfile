@@ -143,7 +143,7 @@ RUN ln -sf /usr/share/zoneinfo/Asia/Tokyo /etc/localtime ; \
     cd
 COPY docker-entrypoint.sh /usr/local/bin/
 COPY cacti_db_backup /etc/cron.d/
-COPY templates/ss_netsnmp_memory.php /usr/share/cacti/scripts/
+COPY opts/ss_netsnmp_memory.php /usr/share/cacti/scripts/
 RUN ln -s usr/local/bin/docker-entrypoint.sh / 
 ENTRYPOINT ["docker-entrypoint.sh"]
 CMD [ "/usr/sbin/init" ]
