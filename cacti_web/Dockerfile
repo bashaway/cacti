@@ -28,16 +28,17 @@ RUN dnf -y install httpd cacti-spine php mod_ssl && \
     sed -i 's/DB_Host..*/DB_Host\ cacti_db/g' /etc/spine.conf && \
     sed -i 's/DB_User..*/DB_User\ cactiuser/g' /etc/spine.conf && \
     sed -i 's/DB_Pass..*/DB_Pass\ cactipwd/g' /etc/spine.conf && \
-    sed -i 's/DB_Pass..*/DB_Pass\ cactipwd/g' /etc/spine.conf && \
-    echo "Cacti_Log  /usr/share/cacti/log/cacti.log" >> /etc/spine.conf && \
     echo done
 
-#RUN dnf -y install mysql 
+RUN rm /etc/httpd/conf.d/ssl.conf && \
+    mkdir -p /run/php-fpm 
+
+
+RUN dnf -y install --enablerepo=epel supervisor
 
 COPY docker-entrypoint.sh /
-#COPY cacti_db_backup /etc/cron.d/
-#COPY opts/ss_netsnmp_memory.php /usr/share/cacti/scripts/
-ENTRYPOINT ["/docker-entrypoint.sh"]
-#CMD [ "cron", "-f" ]
-CMD crond && tail -f /dev/null
 
+COPY supervisord.conf /etc/
+COPY supervisord_cacti.conf /etc/supervisord.d/
+
+ENTRYPOINT ["/docker-entrypoint.sh"]

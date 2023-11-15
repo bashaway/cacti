@@ -1,43 +1,32 @@
 Unofficial cacti docker-compose.yml
 
+# CACTI Install Manual
+
+https://docs.cacti.net/Install-Under-CentOS_LAMP.md
+
 # Parameters
-
-Network
-
-|key|value|
-|:-:|:-:|
-|name|cacti_nw|
-|subnet|-(dynamic)|
-|interface|cacti_nw|
 
 Container
 
 |server|app|address|listen|
 |:-:|:-:|:-:|:-:|
 |cacti_db|MariaDB|-(dynamic)|3306/tcp|
-|cacti_sv|apache<BR>cacti<BR>cacti-spine|-(dynamic)|80/tcp<BR>443/tcp|
-
-# Firewall Policy add
-
-```shell
-firewall-cmd --add-masquerade --permanent
-firewall-cmd --reload
-```
+|cacti_sv|cacti<BR>cacti-spine|-(dynamic)|-|
+|cacti_web|apache|-(dynamic)|80/tcp<BR>443/tcp|
 
 
 # build servers
 
 ## git clone
 
-```shell
+```
 git clone https://github.com/bashaway/cacti
 ```
 
 ## Build and Start Containers
 ```shell
 cd cacti
-docker-compose build
-docker-compose up -d
+docker compose up --build -d
 ```
 
 # Setup
@@ -47,39 +36,13 @@ docker-compose up -d
 http://[hostname or address]/cacti
 
 ## login web console
-Username : admin<BR>
-Password : admin<BR>
-
-![Screenshot from Gyazo](https://gyazo.com/a5228098cfe01716e03853f7ba7cf9fa/raw)
-
-change default password
-
-![Screenshot from Gyazo](https://gyazo.com/3b2d06832bcbd97f09ead6af765b5b85/raw)
-
-![Screenshot from Gyazo](https://gyazo.com/5647932d6e00c091e33019191d285d22/raw)
-
-environment check
-
-![Screenshot from Gyazo](https://gyazo.com/811472f22d12284d4e29792f0f6e0c38/raw)
-
-select New Primary Server　
-
-![Screenshot from Gyazo](https://gyazo.com/b1369c2711a48531baa8b916a438a181/raw)
-
-![Screenshot from Gyazo](https://gyazo.com/2ac81a30cc16dcbc51e40b49bc8daccb/raw)
-
-setup complete
-
-![Screenshot from Gyazo](https://gyazo.com/d568ad96412a1007ad41dc19f4162858/raw)
+Username : admin
+Password : admin
 
 
 ## spine configuration
-
-
 Console --> Configuration --> Settings --> Poller<BR> 
 PollerType : cmd.php --> spine
-
-![image.png](https://qiita-image-store.s3.amazonaws.com/0/334782/19e128a7-7260-9ff5-9bcd-ebb75c526e50.png)
 
 
 check spine process
@@ -143,28 +106,16 @@ if [ "`mysql -ucactiuser -pcactipwd  -h cacti_db cacti  -e 'show tables'`" = "" 
 fi
 ```
 
+# remove servers
 
-
-
-# Appendix
-
-## Install Docker
-
-### DockerCE
-
-```shell
-dnf -y update
-dnf config-manager --add-repo https://download.docker.com/linux/centos/docker-ce.repo
-dnf -y --nobest install docker-ce docker-ce-cli containerd.io
-dnf -y update https://download.docker.com/linux/centos/7/x86_64/stable/Packages/containerd.io-1.2.10-3.2.el7.x86_64.rpm
-dnf -y update
-systemctl enable docker
-systemctl start docker
+## Stop and remove containers, networks, images, and volumes
+```
+docker compose down --rmi all --volumes
 ```
 
-### Docker Compose
-```shell
-curl -L "https://github.com/docker/compose/releases/download/1.25.3/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
-chmod +x /usr/local/bin/docker-compose
+## docker command : Clean Up All Container and Images
+```
+docker ps -aq | xargs docker rm -f ; \
+docker images -aq | xargs docker rmi
 ```
 

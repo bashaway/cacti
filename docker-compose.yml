@@ -2,17 +2,16 @@ version: '3'
 
 services:
   cacti_db:
-    build: ./cacti_db
+    image: mysql:latest
     container_name: cacti_db
     hostname: cacti_db
+    restart: always
     environment:
-      MARIADB_DATABASE: cacti
-      MARIADB_USER: cactiuser
-      MARIADB_PASSWORD: cactipwd
-      MARIADB_ROOT_PASSWORD: rootpwd
+      MYSQL_ROOT_PASSWORD: rootpwd
       TZ: 'Asia/Tokyo'
-    networks:
-      nw:
+    volumes:
+      - ./cacti_db/server.cnf:/etc/mysql/conf.d/server.cnf:ro
+      - ./cacti_db/tz.sh:/docker-entrypoint-initdb.d/tz.sh:ro
     ports:
       - "3306:3306"
 
@@ -21,29 +20,25 @@ services:
     container_name: cacti_sv
     hostname: cactia_sv
     restart: always
-    networks:
-      nw:
-    ports:
-      - 80:80
-      - 443:443
-    links:
-      - cacti_db
-    cap_add:
-      - SYS_ADMIN
-    security_opt:
-      - seccomp:unconfined
     volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
       - ./rra:/var/lib/cacti/rra
     environment:
       TZ: 'Asia/Tokyo'
     depends_on:
       - cacti_db
 
-networks:
-  nw:
-    driver: bridge
-    driver_opts:
-      com.docker.network.bridge.enable_ip_masquerade: "true"
-      com.docker.network.bridge.host_binding_ipv4: "0.0.0.0"
-      com.docker.network.bridge.name: "cacti_nw"
+  cacti_web:
+    build: ./cacti_web
+    container_name: cacti_web
+    hostname: cactia_web
+    restart: always
+    ports:
+      - 80:80
+      - 443:443
+    volumes:
+      - ./rra:/var/lib/cacti/rra
+    environment:
+      TZ: 'Asia/Tokyo'
+    depends_on:
+      - cacti_db
+      - cacti_sv
